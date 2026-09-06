@@ -1,0 +1,89 @@
+/* VaeltrixAI — CSS Fitur Baru: Vaeltrix Artifact, Vaeltrix Live, Vaeltrix Projects.
+   File terpisah dari components.css/layout.css yang udah ada, biar nol risiko nimpa/nabrak
+   style fitur lama. Class .panel-label/.panel-input/.panel-btn/.export-opt/.mem-item/
+   .search-result-item/.ref-small-btn/.code-icon-btn dipakai ulang dari file CSS lain. */
+
+/* ===== Vaeltrix Artifact Panel ===== */
+#artifact-panel {
+  display: none; position: fixed; inset: 0; z-index: 900;
+  background: var(--bg); flex-direction: column;
+}
+#artifact-panel.show { display: flex; }
+.artifact-panel-header {
+  display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+  border-bottom: 1px solid var(--glass-border); flex-shrink: 0;
+  background: var(--surface-solid);
+}
+.artifact-panel-title {
+  font-family: 'Syne', sans-serif; font-weight: 800; font-size: 13.5px; color: var(--white);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 34vw;
+}
+.artifact-panel-tabs { display: flex; gap: 4px; margin-left: auto; background: var(--glass); border-radius: 9px; padding: 3px; }
+.artifact-tab-btn {
+  border: none; background: none; color: var(--muted); font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px; font-weight: 600; padding: 6px 12px; border-radius: 7px; cursor: pointer;
+  transition: all 0.15s;
+}
+.artifact-tab-btn.active { background: var(--blue); color: var(--bg); }
+.artifact-panel-body { flex: 1; overflow: hidden; position: relative; }
+#artifact-code-editor {
+  width: 100%; height: 100%; resize: none; border: none; outline: none;
+  background: #17140F; color: #F0ECE4; font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 12.5px; line-height: 1.6; padding: 16px; box-sizing: border-box;
+}
+#artifact-preview-frame { width: 100%; height: 100%; border: none; background: #fff; }
+.artifact-panel-footer {
+  display: flex; align-items: center; gap: 8px; padding: 12px 16px;
+  border-top: 1px solid var(--glass-border); flex-shrink: 0; background: var(--surface-solid);
+}
+.artifact-panel-footer .ref-small-btn { width: auto; flex-shrink: 0; }
+
+/* ===== Vaeltrix Live (Voice Mode) ===== */
+#live-voice-overlay {
+  display: none; position: fixed; inset: 0; z-index: 900;
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(128,128,128,0.14) 0%, transparent 60%),
+    var(--bg);
+  flex-direction: column; align-items: center; justify-content: center; padding: 24px;
+}
+#live-voice-overlay.show { display: flex; }
+.live-status-label {
+  position: absolute; top: 26px; left: 0; right: 0; text-align: center;
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 1px;
+  color: var(--muted); text-transform: uppercase;
+}
+.live-orb-wrap { position: relative; width: 160px; height: 160px; display: flex; align-items: center; justify-content: center; }
+.live-orb-ring {
+  position: absolute; inset: 0; border-radius: 50%; border: 1.5px solid var(--blue-glow);
+  opacity: 0.5;
+}
+.live-orb {
+  width: 108px; height: 108px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #B8B8B8, #5A5A5A); color: var(--bg);
+  box-shadow: 0 0 40px var(--blue-glow); transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.live-orb.state-idle { opacity: 0.7; }
+.live-orb.state-listening { animation: liveBreathe 1.6s ease-in-out infinite; box-shadow: 0 0 60px var(--blue-glow); }
+.live-orb.state-thinking { animation: liveSpin 1.1s linear infinite; background: linear-gradient(135deg, #FFB800, #ff8a00); }
+.live-orb.state-speaking { animation: livePulseFast 0.5s ease-in-out infinite; }
+@keyframes liveBreathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+@keyframes livePulseFast { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+@keyframes liveSpin { 0% { transform: rotate(0deg) scale(0.94); } 50% { transform: rotate(180deg) scale(1); } 100% { transform: rotate(360deg) scale(0.94); } }
+.live-caption {
+  margin-top: 26px; max-width: 88vw; min-height: 20px; text-align: center;
+  font-size: 13.5px; line-height: 1.6; color: rgba(var(--text-rgb),0.85);
+}
+.live-controls { position: absolute; bottom: 44px; display: flex; align-items: center; gap: 22px; }
+.live-ctrl-btn {
+  width: 54px; height: 54px; border-radius: 50%; border: 1px solid var(--glass-border);
+  background: var(--glass); color: var(--white); display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.2s;
+}
+.live-ctrl-btn:hover { background: rgba(255,255,255,0.08); }
+.live-ctrl-btn.muted { background: rgba(255,60,60,0.18); border-color: rgba(255,60,60,0.4); color: #ff8080; }
+.live-ctrl-btn.live-stop-btn { background: rgba(255,60,60,0.15); border-color: rgba(255,60,60,0.35); color: #ff8080; width: 62px; height: 62px; }
+.live-ctrl-btn.live-stop-btn:hover { background: rgba(255,60,60,0.28); }
+
+@media (min-width: 900px) {
+  .artifact-panel-title { max-width: 50vw; }
+}

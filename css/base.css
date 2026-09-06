@@ -1,0 +1,179 @@
+/* VaeltrixAI — Base: CSS variables, reset, base typography, focus states */
+
+  :root {
+    --bg: #141413;
+    --glass: rgba(255,255,255,0.04);
+    --glass-border: rgba(255,255,255,0.10);
+    --blue: #808080;
+    --blue-dim: rgba(128,128,128,0.12);
+    --blue-glow: rgba(128,128,128,0.25);
+    --gold: #FFB800;
+    --gold-dim: rgba(255,184,0,0.12);
+    --gold-border: rgba(255,184,0,0.25);
+    --white: #F5F3EE;
+    --text-rgb: 245,243,238;
+    --muted: rgba(var(--text-rgb),0.55);
+    --radius: 18px;
+    --sidebar-w: 260px;
+
+    /* ---- Token tambahan: sistem warna & spacing terstruktur ---- */
+    --surface: var(--glass);
+    --surface-soft: rgba(255,255,255,0.02);
+    --surface-solid: #201E1C;
+    --sidebar-bg: rgba(20,18,17,0.9);
+    --topbar-bg: rgba(20,18,17,0.7);
+    --border-soft: rgba(255,255,255,0.08);
+    --border-accent: var(--glass-border);
+    --text-primary: var(--white);
+    --text-secondary: var(--muted);
+    --danger: #ff6b6b;
+    --success: #4ade80;
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: var(--radius);
+    --shadow-soft: 0 8px 28px rgba(0,0,0,0.35);
+    --shadow-glow-blue: 0 4px 18px var(--blue-glow);
+    --shadow-glow-gold: 0 0 22px rgba(255,184,0,0.2);
+    --ease: cubic-bezier(.4,0,.2,1);
+    --dur-fast: 0.15s;
+    --dur-base: 0.25s;
+    --dur-slow: 0.4s;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+
+  /* ===== LIGHT THEME (Settings > Theme Settings) ===== */
+  body.theme-light {
+    --bg: #f4f6fb;
+    --glass: rgba(13,20,36,0.045);
+    --glass-border: rgba(13,20,36,0.12);
+    --white: #0d1424;
+    --text-rgb: 13,20,36;
+    --muted: rgba(13,20,36,0.55);
+    --surface: var(--glass);
+    --surface-soft: rgba(13,20,36,0.03);
+    --surface-solid: #ffffff;
+    --sidebar-bg: rgba(255,255,255,0.92);
+    --topbar-bg: rgba(255,255,255,0.75);
+    --border-soft: rgba(13,20,36,0.08);
+    --shadow-soft: 0 8px 28px rgba(30,25,20,0.12);
+  }
+  body.theme-light::before {
+    background:
+      radial-gradient(ellipse 60% 40% at 10% 20%, rgba(128,128,128,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 90% 80%, rgba(92,45,30,0.05) 0%, transparent 60%);
+  }
+  body.theme-light .bubble code { color: #0057b8; }
+  /* Code block (pre) sengaja tetap gelap walau tema light — biar warna syntax highlight
+     (github-dark) yang dirancang buat background gelap tetap kebaca jelas & enak dipandang,
+     sama kayak konvensi ChatGPT/Claude. */
+  body.theme-light .bubble tbody tr:hover { background: var(--surface-soft); }
+  body.theme-light #toast { background: rgba(30,25,20,0.92); color: #F5F3EE; }
+
+  /* ===== FONT SIZE (Settings > Font Size) ===== */
+  body.font-size-small .bubble { font-size: 13.5px; }
+  body.font-size-small .input-hint, body.font-size-small #msg-input { font-size: 13px; }
+  body.font-size-large .bubble { font-size: 18px; }
+  body.font-size-large .input-hint, body.font-size-large #msg-input { font-size: 16.5px; }
+
+  body {
+    background: var(--bg); color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    height: 100dvh; display: flex; overflow: hidden;
+    transition: background-color var(--dur-slow) var(--ease), color var(--dur-slow) var(--ease);
+  }
+  body::before {
+    content:''; position:fixed; inset:0; z-index:0;
+    background:
+      radial-gradient(ellipse 60% 40% at 10% 20%, rgba(128,128,128,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 90% 80%, rgba(92,45,30,0.07) 0%, transparent 60%);
+    pointer-events:none;
+  }
+  
+    /* ===== PROCESS THINKING BLOCK (Kimi/Claude style) ===== */
+  .thinking-block {
+    background: rgba(128,128,128,0.04);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: rgba(255,184,0,0.75);
+    line-height: 1.6;
+  }
+  :focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  .modal-activate-btn:focus-visible, #send-btn:focus-visible, .upgrade-btn:focus-visible {
+    outline-color: var(--white);
+  }
+  /* Fallback kalau browser tidak dukung backdrop-filter (mis. Firefox lama / low-end) */
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    #sidebar { background: #1C1A18; }
+    #topbar, #input-area { background: #171614; }
+    .modal-sheet, .vx-sheet, #preview-modal .preview-topbar, #code-expand-modal .preview-topbar { background: #201E1C; }
+    #toast { background: #262220; }
+  }
+
+  /* ===== STATE INTERAKSI & MICRO-ANIMATION (halus, tidak berlebihan) ===== */
+  .new-chat-btn, .settings-toggle, .panel-btn, .mode-btn, .suggestion-chip,
+  .qp-item, .export-opt, .more-item, .ref-small-btn, .modal-activate-btn,
+  .upgrade-btn, .sidebar-close-btn, .icon-btn, .input-icon-btn, #send-btn {
+    transition: transform var(--dur-fast) var(--ease), background var(--dur-base) var(--ease),
+      border-color var(--dur-base) var(--ease), box-shadow var(--dur-base) var(--ease), color var(--dur-base) var(--ease);
+  }
+  .new-chat-btn:hover, .qp-item:hover, .export-opt:hover, .suggestion-chip:hover { transform: translateY(-1px); }
+  .new-chat-btn:active, .settings-toggle:active, .panel-btn:active, .mode-btn:active,
+  .suggestion-chip:active, .qp-item:active, .export-opt:active, .more-item:active,
+  .modal-activate-btn:active, .upgrade-btn:active, .icon-btn:active, .input-icon-btn:active {
+    transform: scale(0.97);
+  }
+  .history-item { transition: background var(--dur-base) var(--ease), color var(--dur-base) var(--ease), transform var(--dur-fast) var(--ease); }
+  .history-item:active { transform: scale(0.98); }
+  button:disabled, button[disabled] { cursor: not-allowed; opacity: 0.5; transform: none !important; }
+
+  /* ===== SIDEBAR ===== */
+  #sidebar {
+    width: var(--sidebar-w); min-width: var(--sidebar-w);
+    height: 100dvh; background: var(--sidebar-bg);
+    border-right: 1px solid var(--glass-border);
+    -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+    display: flex; flex-direction: column;
+    z-index: 50; transition: transform var(--dur-slow) var(--ease), background-color var(--dur-slow) var(--ease), border-color var(--dur-slow) var(--ease);
+    position: fixed; top: 0; left: 0;
+  }
+  #overlay.show { display: block; }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);} }
+  @keyframes fadeUpCenter { from{opacity:0;transform:translateX(-50%) translateY(0);} to{opacity:1;transform:translateX(-50%) translateY(-12px);} }
+  /* ===== RESPONSIVE TIERS ===== */
+  /* Desktop besar: beri gutter biar chat tidak terlalu lebar & tetap nyaman dibaca */
+  #chat { padding-left: max(20px, calc((100% - 900px) / 2)); padding-right: max(20px, calc((100% - 900px) / 2)); }
+  #input-area { padding-left: max(20px, calc((100% - 900px) / 2)); padding-right: max(20px, calc((100% - 900px) / 2)); }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 4px; }
+  #toast {
+    position: fixed; bottom: 90px; left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: rgba(30,25,20,0.95); border: 1px solid var(--glass-border);
+    color: var(--white); font-size: 12px; padding: 10px 18px; border-radius: 10px;
+    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); opacity: 0; transition: all 0.3s;
+    pointer-events: none; z-index: 999; white-space: nowrap;
+  }
+  #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  #toast.error { background: rgba(255,60,60,0.15); border-color: rgba(255,60,60,0.3); color: #ff8080; }
+
+  /* ===== SCROLL KE BAWAH (mengambang di tengah, tepat di atas quick-prompt bar) ===== */
+  #scroll-bottom-btn {
+    position: absolute; left: 50%; bottom: 100%; z-index: 45;
+    transform: translateX(-50%) translateY(-12px);
+    width: 40px; height: 40px; border-radius: 50%;
+    background: rgba(24,20,18,0.92); border: 1px solid var(--glass-border);
+    color: var(--blue); display: none; align-items: center; justify-content: center;
+    cursor: pointer; box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+  }

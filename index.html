@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VaeltrixAI &#x2014; by VaeltrixLabs</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#808080">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="VaeltrixAI">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23141413'/><path fill-rule='evenodd' clip-rule='evenodd' d='M 68.10,39.22 L 67.69,39.03 L 65.66,41.51 L 66.08,42.45 L 66.41,42.79 L 66.41,43.28 L 67.02,44.55 L 67.62,47.60 L 67.73,50.53 L 67.28,54.24 L 66.34,56.99 L 65.55,58.30 L 65.48,58.71 L 64.27,60.52 L 62.02,63.07 L 60.22,64.57 L 58.41,65.74 L 55.75,66.94 L 54.17,67.28 L 53.68,67.58 L 52.82,67.58 L 51.84,67.88 L 48.05,67.88 L 44.93,67.28 L 44.59,67.02 L 43.99,66.94 L 42.60,66.34 L 41.74,65.81 L 41.02,65.78 L 39.03,67.69 L 38.92,68.07 L 39.67,68.29 L 40.05,68.63 L 40.42,68.63 L 40.91,69.16 L 42.11,69.53 L 42.45,69.87 L 43.13,69.79 L 43.39,70.10 L 44.37,70.43 L 45.38,70.43 L 46.58,70.77 L 48.65,70.96 L 51.58,70.96 L 52.33,70.73 L 53.08,70.96 L 53.87,70.51 L 54.24,70.58 L 55.56,70.28 L 56.61,69.76 L 57.25,69.87 L 57.59,69.53 L 58.15,69.53 L 58.11,69.19 L 59.28,68.86 L 59.92,68.41 L 61.01,67.99 L 61.01,67.62 L 61.42,67.69 L 62.66,66.53 L 63.15,66.45 L 63.52,65.96 L 63.79,65.93 L 66.79,62.66 L 68.25,60.44 L 68.37,59.92 L 68.97,59.20 L 70.32,55.60 L 70.81,53.68 L 70.85,52.40 L 71.11,51.35 L 70.85,46.54 L 69.61,42.22 Z M 73.74,32.42 L 73.40,32.42 L 69.87,36.48 L 72.39,41.25 L 73.36,44.37 L 73.96,48.72 L 73.59,54.43 L 72.69,57.81 L 71.45,60.63 L 70.21,62.85 L 67.58,66.23 L 64.95,68.71 L 62.32,70.58 L 58.15,72.65 L 55.11,73.59 L 51.16,74.11 L 48.54,74.11 L 44.67,73.59 L 41.55,72.65 L 36.70,70.10 L 32.50,73.96 L 32.65,74.30 L 36.85,76.86 L 42.34,78.92 L 47.93,79.79 L 51.46,79.82 L 57.47,78.88 L 62.25,77.12 L 67.69,73.85 L 71.11,70.77 L 74.38,66.87 L 76.52,63.41 L 78.66,57.93 L 79.56,52.59 L 79.56,47.41 L 78.66,42.22 L 76.48,36.70 Z M 60.78,31.86 L 59.28,30.96 L 55.30,29.42 L 51.88,28.82 L 47.78,28.82 L 46.81,29.12 L 45.68,29.12 L 45.00,29.42 L 44.25,29.45 L 40.50,30.96 L 37.04,33.02 L 34.56,35.31 L 32.16,38.28 L 30.32,41.55 L 30.28,42.04 L 29.23,44.74 L 28.59,48.76 L 28.59,51.20 L 28.89,53.68 L 29.30,55.33 L 30.69,59.13 L 31.90,61.04 L 34.22,58.94 L 34.19,58.38 L 33.32,56.87 L 32.68,55.15 L 32.16,52.70 L 32.01,48.54 L 32.35,45.98 L 33.32,42.90 L 34.79,40.20 L 36.52,37.83 L 37.04,37.38 L 36.74,37.45 L 36.74,37.08 L 37.08,36.82 L 37.42,36.93 L 40.46,34.64 L 42.49,33.51 L 43.09,33.44 L 42.79,33.02 L 42.86,32.83 L 43.20,32.80 L 43.31,33.17 L 43.69,33.17 L 43.88,32.98 L 43.58,32.76 L 43.65,32.61 L 44.89,32.83 L 45.72,32.42 L 46.36,32.50 L 46.96,32.20 L 46.58,32.08 L 46.58,31.90 L 47.37,32.05 L 47.22,32.16 L 48.76,32.01 L 52.22,32.12 L 55.48,32.87 L 55.71,33.17 L 57.10,33.59 L 58.49,34.26 L 60.93,32.27 Z M 67.17,25.85 L 63.18,23.41 L 57.74,21.30 L 52.78,20.40 L 47.07,20.40 L 41.92,21.30 L 36.48,23.41 L 32.87,25.58 L 28.78,29.04 L 25.55,32.83 L 23.14,36.78 L 21.34,41.14 L 20.70,43.50 L 20.14,47.30 L 20.10,52.29 L 21.04,57.93 L 23.14,63.33 L 25.74,67.47 L 26.07,67.50 L 29.79,63.56 L 27.58,59.32 L 26.37,55.78 L 25.74,51.43 L 25.70,48.99 L 26.07,45.53 L 27.35,41.10 L 29.72,36.48 L 32.38,33.32 L 34.45,31.41 L 37.23,29.38 L 40.95,27.50 L 44.10,26.49 L 49.51,25.81 L 55.33,26.37 L 58.86,27.54 L 63.45,29.90 L 67.24,26.56 Z M 79.56,20.33 L 74.60,24.01 L 65.55,31.56 L 57.47,38.73 L 44.18,51.73 L 34.60,62.25 L 27.65,70.43 L 21.42,78.51 L 30.58,70.73 L 37.68,65.33 L 44.93,58.41 L 46.92,56.84 L 47.93,55.37 L 48.27,55.37 L 53.57,50.23 L 55.11,48.27 L 57.51,45.98 L 58.15,44.97 L 65.63,37.04 L 74.75,26.45 Z' fill='white'/></svg>">
+<meta name="description" content="Try VaeltrixAI to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done." />
+<meta name="keywords" content="VaeltrixAI, VaeltrixCode, visual coding, agent swarm, office, PPT, slides, presentation, VaeltrixLabs, deep research, Excel, PDF, Word, websites" />
+<link href="assets/css/css2" rel="stylesheet">
+<!-- Font Branding "VAELTRIX" (Sidebar & Topbar) — gaya futuristik/tech -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous"></script>
+<!-- Vaeltrix Document Analysis (PDF text extraction) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" crossorigin="anonymous"></script>
+<script>
+  if (window["pdfjsLib"]) {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+  }
+</script>
+<!-- Vaeltrix Syntax Highlighting -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" crossorigin="anonymous"></script>
+<!-- Vaeltrix Math Rendering (KaTeX) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/features.css">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<script>(function(){var p=["/login","/register","/forgot-password","/reset-password","/auth/callback"];if(p.indexOf(window.location.pathname)!==-1){document.documentElement.classList.add("vx-auth-route");}})();</script>
+
+<!-- App Lock (Account Security PIN) -->
+<div id="applock-screen">
+  <div class="applock-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+  <div class="applock-title"><b>VAELTRIX TERKUNCI</b></div>
+  <div class="applock-sub"><b>Masukkan PIN Kamu Untuk Membuka VaeltrixAI, Tuan.</b></div>
+  <input type="password" inputmode="numeric" maxlength="6" class="applock-input" id="applock-input" placeholder="••••••" autocomplete="off" onkeydown="if(event.key==='Enter') tryUnlockApp()">
+  <div class="modal-error" id="applock-error" style="min-height:16px;"></div>
+  <button class="modal-activate-btn" style="width:200px;background:var(--blue);color:var(--bg);" onclick="tryUnlockApp()"><b>BUKA</b></button>
+</div>
+
+<!-- VaeltrixAI Auth Pages: /login /register /forgot-password /reset-password /auth/callback -->
+<div id="vx-auth-screen">
+  <div class="vx-auth-glow"></div>
+  <div class="vx-auth-card">
+
+    <div id="vx-view-login">
+      <div class="vx-auth-logo">
+        <img src="assets/logo-dark.png" alt="VaeltrixAI" class="vx-auth-logo-img vx-auth-logo-dark">
+        <img src="assets/logo-light.png" alt="VaeltrixAI" class="vx-auth-logo-img vx-auth-logo-light">
+      </div>
+      <div class="vx-auth-heading">Masuk Ke Akun Kamu</div>
+      <div class="vx-auth-subtitle">Login Buat Sinkronin Percakapan &amp; Akses Model Lewat Server VaeltrixLabs.</div>
+      <div class="vx-auth-oauth-group">
+        <button class="vx-auth-oauth-btn" onclick="startVaeltrixOAuth('google')">Lanjut Dengan Google</button>
+        <button class="vx-auth-oauth-btn" onclick="startVaeltrixOAuth('github')">Lanjut Dengan Github</button>
+      </div>
+      <div class="vx-auth-divider"><span>Atau Pakai Email</span></div>
+      <div class="vx-auth-field">
+        <label for="vx-login-email">Email</label>
+        <input type="email" class="vx-auth-input" id="vx-login-email" placeholder="nama@email.com" autocomplete="email">
+      </div>
+      <div class="vx-auth-field">
+        <label for="vx-login-password">Password</label>
+        <input type="password" class="vx-auth-input" id="vx-login-password" placeholder="Password" autocomplete="current-password" onkeydown="if(event.key==='Enter') submitVaeltrixLoginPage()">
+      </div>
+      <div class="vx-auth-row-between"><a class="vx-auth-link" href="/forgot-password">Lupa Password?</a></div>
+      <div class="vx-auth-error" id="vx-login-error"></div>
+      <button class="vx-auth-submit-btn" id="vx-login-submit-btn" onclick="submitVaeltrixLoginPage()">LOGIN</button>
+      <button class="vx-auth-link" id="vx-login-resend-btn" style="display:none;margin-top:14px;width:100%;text-align:center;" onclick="resendVerificationEmail('vx-login-email')">Kirim Ulang Email Verifikasi</button>
+      <div class="vx-auth-footer">Belum Punya Akun? <a class="vx-auth-link" href="/register">Daftar Di Sini</a></div>
+      <div class="vx-auth-legal">Dengan Melanjutkan, Kamu Menyetujui <a class="vx-auth-link" href="javascript:void(0)" onclick="openLegalModal('terms')">Ketentuan Layanan</a> &amp; <a class="vx-auth-link" href="javascript:void(0)" onclick="openLegalModal('privacy')">Kebijakan Privasi</a> VaeltrixAI.</div>
+    </div>
+
+    <div id="vx-view-register" style="display:none;">
+      <div class="vx-auth-logo">
+        <img src="assets/logo-dark.png" alt="VaeltrixAI" class="vx-auth-logo-img vx-auth-logo-dark">
+        <img src="assets/logo-light.png" alt="VaeltrixAI" class="vx-auth-logo-img vx-auth-logo-light">
+      </div>
+      <div class="vx-auth-heading">Buat Akun Baru</div>
+      <div class="vx-auth-subtitle">Gratis, Cuma Butuh Email. Akses Model Lewat Server &amp; Sinkronisasi Cloud.</div>
+      <div class="vx-auth-oauth-group">
+        <button class="vx-auth-oauth-btn" onclick="startVaeltrixOAuth('google')">Lanjut Dengan Google</button>
+        <button class="vx-auth-oauth-btn" onclick="startVaeltrixOAuth('github')">Lanjut Dengan Github</button>
+      </div>
+      <div class="vx-auth-divider"><span>Atau Pakai Email</span></div>
+      <div class="vx-auth-field">
+        <label for="vx-register-name">Nama</label>
+        <input type="text" class="vx-auth-input" id="vx-register-name" placeholder="Nama Kamu" autocomplete="name">
+      </div>
+      <div class="vx-auth-field">
+        <label for="vx-register-email">Email</label>
+        <input type="email" class="vx-auth-input" id="vx-register-email" placeholder="nama@email.com" autocomplete="email">
+      </div>
+      <div class="vx-auth-field">
+        <label for="vx-register-password">Password</label>
+        <input type="password" class="vx-auth-input" id="vx-register-password" placeholder="Minimal 8 Karakter" autocomplete="new-password" onkeydown="if(event.key==='Enter') submitVaeltrixRegisterPage()">
+      </div>
+      <div class="vx-auth-error" id="vx-register-error"></div>
+      <button class="vx-auth-submit-btn" id="vx-register-submit-btn" onclick="submitVaeltrixRegisterPage()">DAFTAR</button>
+      <button class="vx-auth-link" id="vx-register-resend-btn" style="display:none;margin-top:14px;width:100%;text-align:center;" onclick="resendVerificationEmail('vx-register-email')">Kirim Ulang Email Verifikasi</button>
+      <div class="vx-auth-footer">Sudah Punya Akun? <a class="vx-auth-link" href="/login">Login Di Sini</a></div>
+      <div class="vx-auth-legal">Dengan Mendaftar, Kamu Menyetujui <a class="vx-auth-link" href="javascript:void(0)" onclick="openLegalModal('terms')">Ketentuan Layanan</a> &amp; <a class="vx-auth-link" href="javascript:void(0)" onclick="openLegalModal('privacy')">Kebijakan Privasi</a> VaeltrixAI.</div>
+    </div>
+
+    <div id="vx-view-forgot" style="display:none;">
+      <button class="vx-auth-back" onclick="window.location.href='/login'">&larr; Kembali Ke Login</button>
+      <div class="vx-auth-heading" style="text-align:left;">Lupa Password?</div>
+      <div class="vx-auth-subtitle" style="text-align:left;">Masukkan Email Akun Kamu, Nanti Kami Kirim Link Buat Bikin Password Baru.</div>
+      <div class="vx-auth-field">
+        <label for="vx-forgot-email">Email</label>
+        <input type="email" class="vx-auth-input" id="vx-forgot-email" placeholder="nama@email.com" autocomplete="email" onkeydown="if(event.key==='Enter') submitVaeltrixForgotPassword()">
+      </div>
+      <div class="vx-auth-error" id="vx-forgot-error"></div>
+      <button class="vx-auth-submit-btn" id="vx-forgot-submit-btn" onclick="submitVaeltrixForgotPassword()">KIRIM LINK RESET</button>
+    </div>
+
+    <div id="vx-view-forgot-sent" style="display:none;text-align:center;">
+      <div class="vx-auth-heading">Cek Email Kamu</div>
+      <div class="vx-auth-subtitle">Kalau Email Itu Terdaftar, Link Buat Reset Password Sudah Kami Kirim. Cek Juga Folder Spam Kalau Belum Muncul.</div>
+      <button class="vx-auth-submit-btn" onclick="window.location.href='/login'">KEMBALI KE LOGIN</button>
+    </div>
+
+    <div id="vx-view-reset" style="display:none;">
+      <div class="vx-auth-heading">Buat Password Baru</div>
+      <div class="vx-auth-subtitle">Masukkan Password Baru Buat Akun Kamu.</div>
+      <div class="vx-auth-field">
+        <label for="vx-reset-password">Password Baru</label>
+        <input type="password" class="vx-auth-input" id="vx-reset-password" placeholder="Minimal 8 Karakter" autocomplete="new-password">
+      </div>
+      <div class="vx-auth-field">
+        <label for="vx-reset-password-confirm">Ulangi Password Baru</label>
+        <input type="password" class="vx-auth-input" id="vx-reset-password-confirm" placeholder="Ulangi Password Baru" autocomplete="new-password" onkeydown="if(event.key==='Enter') submitVaeltrixResetPassword()">
+      </div>
+      <div class="vx-auth-error" id="vx-reset-error"></div>
+      <button class="vx-auth-submit-btn" id="vx-reset-submit-btn" onclick="submitVaeltrixResetPassword()">SIMPAN PASSWORD BARU</button>
+    </div>
+
+    <div id="vx-view-reset-invalid" style="display:none;text-align:center;">
+      <div class="vx-auth-heading">Link Sudah Tidak Berlaku</div>
+      <div class="vx-auth-subtitle">Link Reset Password Ini Sudah Kadaluarsa Atau Sudah Dipakai. Minta Link Baru Ya.</div>
+      <button class="vx-auth-submit-btn" onclick="window.location.href='/forgot-password'">MINTA LINK BARU</button>
+    </div>
+
+    <div id="vx-view-oauth-loading" style="display:none;text-align:center;">
+      <div class="vx-auth-loading-spinner"></div>
+      <div class="vx-auth-subtitle" style="margin-bottom:0;">Menyelesaikan Login...</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Sidebar -->
+<aside id="sidebar" aria-label="Navigasi Sidebar VaeltrixAI">
+  <div class="sidebar-header">
+    <div>
+      <div class="logo"><b>VAELTRIX</b></div>
+      <div class="logo-sub"><b>AI By ─ VaeltrixLabs</b></div>
+    </div>
+    <button class="sidebar-close-btn" onclick="closeSidebar()" aria-label="Tutup Sidebar" title="Tutup Sidebar">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <div class="plan-badge free" id="plan-badge">
+    <span id="plan-badge-icon" style="display:inline-flex;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+    <span id="plan-label"><b>Free Plans</b></span>
+  </div>
+
+  <button class="new-chat-btn" onclick="openSettingsModal()">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><b>
+    Settings
+  </b></button>
+
+  <button class="new-chat-btn" onclick="openSearchModal()">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><b>
+    Cari Chat
+  </b></button>
+
+  <button class="new-chat-btn" onclick="openProjectsPanel()">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg><b>
+    Projects
+  </b></button>
+
+  <button class="new-chat-btn" onclick="openArtifactsListPanel()">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><b>
+    Artifacts
+  </b></button>
+
+  <button class="new-chat-btn" onclick="openLiveMode()">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4"/></svg><b>
+    Vaeltrix Live
+  </b></button>
+
+  <div class="history-label"><b>RIWAYAT CHAT :</b></div>
+  <div id="history-list"></div>
+
+  <!-- Vaeltrix Memory, Gaya Bicara, Custom API Keys, dan Upgrade Plans dipindah ke dalam
+       menu Pengaturan/Settings (lihat #settings-backdrop) biar sidebar gak penuh sesak. -->
+</aside>
+
+<div id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Main -->
+<main id="main">
+  <header id="topbar">
+    <button class="menu-btn" onclick="toggleSidebar()" aria-label="Buka/Tutup Sidebar">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<path d="M7 17H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+    </button>
+    <span class="topbar-title">VAELTRIX 1.8</span>
+    <span style="font-size:9px;color:var(--muted);letter-spacing:1px;margin-left:-8px;margin-top:2px;align-self:flex-end;padding-bottom:2px;"></span>
+    <div style="margin-left:auto;display:flex;align-items:center;gap:4px;">
+      <button class="icon-btn" onclick="newChat()" title="Chat Baru" aria-label="Mulai Chat Baru">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4H6C4.895 4 4 4.895 4 6V18C4 19.105 4.895 20 6 20H18C19.105 20 20 19.105 20 18V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M9 15V12.5L17.75 3.75C18.44 3.06 19.56 3.06 20.25 3.75V3.75C20.94 4.44 20.94 5.56 20.25 6.25L15.5 11L11.5 15H9Z" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div id="more-menu-wrap">
+        <button class="icon-btn" onclick="toggleMoreMenu(event)" title="Menu" aria-label="Menu Lainnya" aria-haspopup="true">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg>
+        </button>
+        <div id="more-menu">
+          <div class="more-item" onclick="openExportModal()"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Export Chat</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="chat">
+    <div id="welcome">
+      <div class="welcome-icon">
+        <svg width="28" height="28" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path 
+        fill-rule="evenodd" 
+        clip-rule="evenodd" 
+        d="M9.02 0 C9.44 0 9.84 0.17 10.14 0.46 L15.53 5.85 C15.83 6.15 15.99 6.55 15.99 6.97 V9.02 C15.99 9.44 15.83 9.84 15.53 10.14 L10.14 15.53 C9.84 15.83 9.44 15.99 9.02 15.99 H6.97 C6.55 15.99 6.15 15.83 5.85 15.53 L0.46 10.14 C0.17 9.84 0 9.44 0 9.02 V6.97 C0 6.55 0.17 6.15 0.46 5.85 L5.85 0.46 C6.15 0.17 6.55 0 6.97 0 L9.02 0 Z M9.3 2.8 C8.6 2.1 7.4 2.1 6.7 2.8 L2.8 6.7 C2.1 7.4 2.1 8.6 2.8 9.3 L6.7 13.2 C7.4 13.9 8.6 13.9 9.3 13.2 L13.2 9.3 C13.9 8.6 13.9 7.4 13.2 6.7 L9.3 2.8 Z" 
+        fill="currentColor" 
+    />
+</svg>
+
+
+</div>
+      <div class="welcome-title">VAELTRIX</div>
+      <div class="welcome-sub"><b>Your Intelligent AI Assistant For Coding, Reasoning, Writing, And Everyday Tasks.</b></div>
+<div class="suggestions">
+  <button class="suggestion-chip" onclick="sendSuggestion(this)">
+    <!-- ikon lampu ide -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.5 4.6 3.6 5.5V17a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-2.5c2.1-.9 3.6-3 3.6-5.5a7 7 0 0 0-7-7zm0 12h-2v-2h2v2zm1.5-6.5c-.8.6-1.5 1.4-1.5 2.5h-2c0-1.5.9-2.8 2.2-3.5L12 5c-.6-.4-1-.9-1-1.5a1 1 0 1 1 2 0c0 .3-.2.5-.4.7z"/>
+    </svg> Eksplorasi Ide Konten Kreatif
+  </button>
+
+  <button class="suggestion-chip" onclick="sendSuggestion(this)">
+    <!-- ikon buku -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 4h16v2H4V4zm0 4h12v2H4V8zm0 4h16v2H4v-2zm0 4h12v2H4v-2z"/>
+    </svg> Bantu Pemecahan Masalah
+  </button>
+
+  <button class="suggestion-chip" onclick="sendSuggestion(this)">
+    <!-- ikon bug -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2a2 2 0 0 1 2 2v1h3a1 1 0 0 1 .9.6l1.5 3a1 1 0 0 1-.2 1.1L16 11l1.2 2.4a1 1 0 0 1-.2 1.1l-2 2a1 1 0 0 1-1.4 0L12 13l-1.6 1.5a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1-.2-1.1L8 11l-2.8-1.7a1 1 0 0 1-.2-1.1l1.5-3A1 1 0 0 1 7 5h3V4a2 2 0 0 1 2-2zM9 7H7.2l-.9 1.8 1.1 2.1 1.6-1V7zm6 0v2.9l1.6 1 1.1-2.1L14.8 7H15z"/>
+    </svg> Tinjau & Debug Kode
+  </button>
+
+  <button class="suggestion-chip" onclick="sendSuggestion(this)">
+    <!-- ikon kalkulator -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 2h14a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm2 4v2h10V6H7zm0 4v2h10v-2H7zm0 4v2h6v-2H7z"/>
+    </svg> Analisis Logika & Math
+  </button>
+</div>
+    </div>
+  </div>
+
+  <div id="input-area">
+    <button id="scroll-bottom-btn" onclick="scrollChatToBottom()" aria-label="Scroll Ke Pesan Terbaru" title="Ke Bawah">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+    </button>
+    <div id="qp-bar"></div>
+    <div id="chat-counter"></div>
+    <div id="attach-preview"></div>
+    <div class="input-wrap" id="input-wrap">
+      <input type="file" id="file-input" multiple style="display:none" onchange="handleFileSelect(event)" aria-hidden="true">
+      <input type="file" id="file-input-photos" accept="image/*" multiple style="display:none" onchange="handleFileSelect(event)" aria-hidden="true">
+      <input type="file" id="file-input-camera" accept="image/*" capture="environment" style="display:none" onchange="handleFileSelect(event)" aria-hidden="true">
+
+      <textarea id="msg-input" placeholder="Tanya VaeltrixAI..." aria-label="Tulis Pesan Ke VaeltrixAI" rows="1" onkeydown="handleKey(event)" oninput="autoResize(this); scheduleDraftSave();" onpaste="handlePasteImage(event)"></textarea>
+
+      <div class="input-toolbar">
+        <div class="input-toolbar-left">
+          <button class="input-icon-btn plus-btn" id="plus-btn" title="Tambah Ke Chat" aria-label="Tambah Ke Chat" onclick="openAttachMenu()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <button id="mode-toggle-btn" onclick="openModeSheet()" aria-label="Pilih Mode Chat">
+            <span id="mode-btn-icon"><svg width="13" height="13" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></span>
+            <span id="mode-btn-label"><b>Flash 1.8</b></span>
+            <svg width="10" height="10" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="input-toolbar-right">
+          <button class="input-icon-btn" id="mic-btn" title="Input Suara" aria-label="Input Suara" onclick="toggleVoiceInput()">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          </button>
+          <button id="send-btn" onclick="sendMessage()" aria-label="Kirim Pesan">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 20V5" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M5.5 11.5L12 5L18.5 11.5" stroke="black" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="input-hint" id="input-hint"><b>Vaeltrix Adalah AI. Dan Bisa Keliru Periksa Kembali Respons Nya.</b></div>
+  </div>
+</main>
+
+<!-- Mode Bottom Sheet -->
+<div id="mode-sheet" style="display:none;position:fixed;inset:0;z-index:300;background:rgba(0,0,0,0.6);-webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);align-items:flex-end;justify-content:center;">
+  <div style="background:var(--surface-solid);border:1px solid var(--glass-border);border-radius:24px 24px 0 0;padding:24px 20px 36px;width:100%;max-width:480px;max-height:85vh;overflow-y:auto;animation:slideUp 0.3s cubic-bezier(.4,0,.2,1);">
+    <div style="width:40px;height:4px;background:rgba(255,255,255,0.15);border-radius:2px;margin:0 auto 20px;"></div>
+    <div style="font-family:&apos;Syne&apos;,sans-serif;font-weight:800;font-size:16px;letter-spacing:2px;margin-bottom:6px;color:var(--white);"><b>Pilih Model</b></div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:20px;"><b>Setiap Model Punya Keahlian Berbeda</b></div>
+
+    <!-- Flash -->
+    <div onclick="selectMode(&apos;flash&apos;)" id="sheet-flash" class="model-pick-row" style="background:var(--blue-dim);">
+      <div style="flex:1;min-width:0;">
+        <div class="model-pick-title">Vaeltrix Flash 1.8 <span class="model-pick-badge free">GRATIS</span></div>
+        <div class="model-pick-sub">AI Serba Bisa Untuk Semua</div>
+      </div>
+      <div id="check-flash" class="model-pick-check">
+        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+    </div>
+
+    <!-- Lite -->
+    <div onclick="selectMode(&apos;lite&apos;)" id="sheet-lite" class="model-pick-row">
+      <div style="flex:1;min-width:0;">
+        <div class="model-pick-title">Vaeltrix Lite 1.8 <span class="model-pick-badge free">GRATIS</span></div>
+        <div class="model-pick-sub">Respons Cepat, Respons Instan</div>
+      </div>
+      <div id="check-lite" class="model-pick-check" style="display:none;">
+        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+    </div>
+
+    <!-- Code -->
+    <div onclick="selectMode(&apos;code&apos;)" id="sheet-code" class="model-pick-row">
+      <div style="flex:1;min-width:0;">
+        <div class="model-pick-title">Vaeltrix Code <span class="model-pick-badge premium">PREMIUM</span></div>
+        <div class="model-pick-sub">Expert Coding, Debug, Dan Review Kode</div>
+      </div>
+      <div id="check-code" class="model-pick-check" style="display:none;">
+        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+    </div>
+
+    <!-- Maxs -->
+    <div onclick="selectMode(&apos;maxs&apos;)" id="sheet-maxs" class="model-pick-row">
+      <div style="flex:1;min-width:0;">
+        <div class="model-pick-title">Vaeltrix Max<span class="model-pick-badge premium">PREMIUM</span></div>
+        <div class="model-pick-sub">Matematika, Riset Mendalam, Untuk Tugas Berat</div>
+      </div>
+      <div id="check-maxs" class="model-pick-check" style="display:none;">
+        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+    </div>
+
+    <!-- Research (P0.2 fix — sebelumnya CUMA bisa diakses lewat menu lampiran (tryDeepResearch),
+         gak ada sama sekali di picker mode utama ini, padahal logic-nya udah lengkap di backend -->
+    <div onclick="selectMode('research')" id="sheet-research" class="model-pick-row">
+      <div style="flex:1;min-width:0;">
+        <div class="model-pick-title">Vaeltrix Deep Research <span class="model-pick-badge premium">PREMIUM</span></div>
+        <div class="model-pick-sub">Riset Berbasis Web, Cross-Check Sumber, Untuk Topik Yang Butuh Bukti</div>
+      </div>
+      <div id="check-research" class="model-pick-check" style="display:none;">
+        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+    </div>
+
+    <!-- Upaya — nempel di bawah list model, pola sama kayak picker Claude: klik buka sub-sheet -->
+    <div class="model-pick-row" style="background:var(--surface-soft);" onclick="closeModeSheet(); openOptionPicker('effort');">
+      <span style="color:var(--text-secondary);display:flex;align-items:center;flex-shrink:0;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+      <div style="flex:1;min-width:0;">
+        <div class="model-pick-title" style="font-size:14.5px;">Upaya</div>
+        <div class="model-pick-sub" id="mode-sheet-effort-val" style="color:var(--blue);">Sedang</div>
+      </div>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--muted);flex-shrink:0;"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- Premium Modal -->
+<div id="premium-modal" role="dialog" aria-modal="true" aria-label="Aktivasi Premium">
+  <div class="modal-sheet">
+    <div class="modal-pill"></div>
+    <div class="modal-title" style="display:flex;align-items:center;gap:9px;">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+      </svg>
+      <b> VAELTRIX PREMIUM</b>
+    </div>
+    <div class="modal-sub"><b>Masukkan Kode Aktivasi Untuk Unlock Semua Fitur Premium.</b></div>
+    
+    <div class="modal-features">
+
+      <!-- 1. Advanced Models -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Mode Code, Maxs &amp; Deep Research</b></div>
+          <div class="feat-sub"><b>AI Expert Coding, Matematika &amp; Riset Mendalam</b></div>
+        </div>
+      </div>
+
+      <!-- 2. Higher Rate Limit -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>60 Pesan / Jam</b></div>
+          <div class="feat-sub"><b>3x Lebih Banyak Dari Free · Reset Tiap Jam</b></div>
+        </div>
+      </div>
+
+      <!-- 3. History + Cloud Sync -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Riwayat 100 Sesi + Cloud Sync</b></div>
+          <div class="feat-sub"><b>Simpan Lebih Banyak &amp; Sinkron Antar Perangkat</b></div>
+        </div>
+      </div>
+
+      <!-- 4. Offline Mode -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Offline Mode (WebLLM)</b></div>
+          <div class="feat-sub"><b>Jalan Lokal Di Browser Tanpa Internet</b></div>
+        </div>
+      </div>
+
+      <!-- 5. Priority + Longer Context -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Priority Access &amp; Longer Context</b></div>
+          <div class="feat-sub"><b>Respons Lebih Cepat · Context Window Lebih Panjang</b></div>
+        </div>
+      </div>
+
+      <!-- 6. Projects + Custom Instructions -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Projects + Custom Instructions</b></div>
+          <div class="feat-sub"><b>Workspace Khusus + Instruksi Sistem Per Project</b></div>
+        </div>
+      </div>
+
+      <!-- 7. Advanced Artifacts & Vision -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Advanced Artifacts &amp; Vision</b></div>
+          <div class="feat-sub"><b>Canvas Interaktif + Analisis Gambar Prioritas</b></div>
+        </div>
+      </div>
+
+      <!-- 8. Voice & Live Voice -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Voice &amp; Live Voice Unlimited</b></div>
+          <div class="feat-sub"><b>STT + TTS + Live Conversation Tanpa Batas</b></div>
+        </div>
+      </div>
+
+      <!-- 9. Prompt Library + Temporary Chat -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Prompt Library &amp; Temporary Chat</b></div>
+          <div class="feat-sub"><b>Simpan Prompt Favorit + Chat Incognito</b></div>
+        </div>
+      </div>
+
+      <!-- 10. Export Unlimited + Advanced Memory -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Export Unlimited + Advanced Memory</b></div>
+          <div class="feat-sub"><b>PDF / Markdown / JSON + Memory Lebih Cerdas</b></div>
+        </div>
+      </div>
+
+      <!-- 11. Early Access -->
+      <div class="modal-feature">
+        <div class="feat-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-text"><b>Early Access Fitur Baru</b></div>
+          <div class="feat-sub"><b>Dapatkan Fitur Eksperimental Lebih Dulu</b></div>
+        </div>
+      </div>
+
+    </div>
+
+    <input type="text" class="modal-input" id="premium-code-input" placeholder="Kode Aktivasi..." autocomplete="off">
+    <div class="modal-error" id="modal-error"></div>
+    <button class="modal-activate-btn" onclick="activatePremium()"><b>AKTIFKAN</b></button>
+    <button class="modal-cancel" onclick="closePremiumModal()"><b>NANTI</b></button>
+  </div>
+</div>
+
+<!-- Quick Prompts Sheet -->
+<div class="vx-sheet-backdrop" id="attach-menu-backdrop" role="dialog" aria-modal="true" aria-label="Tambah Ke Chat" onclick="if(event.target===this) closeAttachMenu()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeAttachMenu()" aria-label="Tutup"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><b>TAMBAH KE CHAT</b></div>
+    <div class="vx-sheet-sub"><b>Lampirkan File, Atau Aktifkan Fitur Tambahan Vaeltrix</b></div>
+
+    <div class="attach-menu-icons">
+      <button class="attach-menu-icon-btn" onclick="document.getElementById('file-input-camera').click(); closeAttachMenu();">
+        <span class="attach-menu-icon-circle"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></span><b>
+        Kamera
+      </b></button>
+      <button class="attach-menu-icon-btn" onclick="document.getElementById('file-input-photos').click(); closeAttachMenu();">
+        <span class="attach-menu-icon-circle"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></span><b>
+        Galeri
+      </b></button>
+      <button class="attach-menu-icon-btn" onclick="document.getElementById('file-input').click(); closeAttachMenu();">
+        <span class="attach-menu-icon-circle"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><b>
+        File
+      </b></button>
+    </div>
+
+    <div class="attach-menu-feature-row">
+      <span class="attach-menu-feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+      <div class="attach-menu-feature-text">
+        <div class="attach-menu-feature-title"><b>Pencarian Web</b></div>
+        <div class="attach-menu-feature-desc"><b>Vaeltrix Cari Info Terbaru Dulu Sebelum Jawab.</b></div>
+      </div>
+      <label class="vx-toggle">
+        <input type="checkbox" id="web-search-toggle" onchange="toggleWebSearch(this.checked)">
+        <span class="vx-toggle-slider"></span>
+      </label>
+    </div>
+
+    <div class="attach-menu-feature-row">
+      <span class="attach-menu-feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+      <div class="attach-menu-feature-text">
+        <div class="attach-menu-feature-title"><b>Pemikiran</b></div>
+        <div class="attach-menu-feature-desc"><b>Vaeltrix Mikir Dulu Terang-Terangan Sebelum Jawab, Di Mode Manapun.</b></div>
+      </div>
+      <label class="vx-toggle">
+        <input type="checkbox" id="thinking-toggle" onchange="toggleForceThinking(this.checked)">
+        <span class="vx-toggle-slider"></span>
+      </label>
+    </div>
+
+    <div class="attach-menu-feature-row" onclick="startImageGenFlow()" style="cursor:pointer;">
+      <span class="attach-menu-feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></span>
+      <div class="attach-menu-feature-text">
+        <div class="attach-menu-feature-title"><b>Buat Foto</b></div>
+        <div class="attach-menu-feature-desc"><b>Generate Gambar Dari Deskripsi Teks</b></div>
+      </div>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="attach-menu-feature-row" onclick="startImageEditFlow()" style="cursor:pointer;">
+      <span class="attach-menu-feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4z"/></svg></span>
+      <div class="attach-menu-feature-text">
+        <div class="attach-menu-feature-title"><b>Edit Foto</b></div>
+        <div class="attach-menu-feature-desc"><b>Ubah Foto Yang Ada Pakai Instruksi Teks</b></div>
+      </div>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="attach-menu-feature-row" onclick="startProjectFlow()" style="cursor:pointer;">
+      <span class="attach-menu-feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span>
+      <div class="attach-menu-feature-text">
+        <div class="attach-menu-feature-title"><b>Buat Proyek</b></div>
+        <div class="attach-menu-feature-desc"><b>Bikin Aplikasi/Website Multi-File, Unduh Satuan Atau ZIP</b></div>
+      </div>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="attach-menu-feature-row">
+      <span class="attach-menu-feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></span>
+      <div class="attach-menu-feature-text">
+        <div class="attach-menu-feature-title"><b>VaeltrixAI Offline Mode</b> <span style="font-size:9.5px;background:var(--gold-dim);color:var(--gold);padding:1px 7px;border-radius:20px;margin-left:2px;border:1px solid var(--gold-border);"><b>PREMIUM</b></span> <span class="beta-badge" style="display:none;font-size:9.5px;background:var(--blue-dim);color:var(--blue);padding:1px 7px;border-radius:20px;margin-left:2px;border:1px solid rgba(128,128,128,0.3);"><b>BETA</b></span></div>
+        <div class="attach-menu-feature-desc"><b>Chat AI Tanpa Koneksi Internet &amp; Mode Offline</b></div>
+      </div>
+      <label class="vx-toggle">
+        <input type="checkbox" id="offline-mode-toggle" onchange="toggleOfflineMode(this)">
+        <span class="vx-toggle-slider"></span>
+      </label>
+    </div>
+
+    <div class="attach-menu-feature-row" onclick="tryDeepResearch()" style="cursor:pointer;">
+      <span class="attach-menu-feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><path d="M11 8v3l2 2"/></svg></span>
+      <div class="attach-menu-feature-text">
+        <div class="attach-menu-feature-title"><b>Deep Research</b> <span style="font-size:9.5px;background:var(--gold-dim);color:var(--gold);padding:1px 7px;border-radius:20px;margin-left:2px;border:1px solid var(--gold-border);"><b>PREMIUM</b></span> <span class="beta-badge" style="font-size:9.5px;background:var(--blue-dim);color:var(--blue);padding:1px 7px;border-radius:20px;margin-left:2px;border:1px solid rgba(128,128,128,0.3);">BETA</span></div>
+        <div class="attach-menu-feature-desc"><b>Riset &amp; Analisis Mendalam Multi-Sudut Pakai Model Pro</b></div>
+      </div>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  </div>
+</div>
+
+<div class="vx-sheet-backdrop" id="qp-backdrop" role="dialog" aria-modal="true" aria-label="Quick Prompts" onclick="if(event.target===this) closeQuickPrompts()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeQuickPrompts()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><b> Quick Prompts</b></div>
+    <div class="vx-sheet-sub"><b>Tinggal Tap, Vaeltrix Langsung Kerjain.</b></div>
+    <div id="qp-list"></div>
+  </div>
+</div>
+
+<!-- Stats Sheet -->
+<div class="vx-sheet-backdrop" id="stats-backdrop" role="dialog" aria-modal="true" aria-label="Vaeltrix Stats" onclick="if(event.target===this) closeStatsModal()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeStatsModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Vaeltrix Stats</div>
+    <div class="vx-sheet-sub"><b>Ringkasan Aktivitas Chat Kamu Di VaeltrixAI.</b></div>
+    <div class="stat-grid">
+      <div class="stat-box"><div class="stat-num" id="stat-total-chats">0</div><div class="stat-lbl"><b>Total Sesi Chat</b></div></div>
+      <div class="stat-box"><div class="stat-num" id="stat-total-msgs">0</div><div class="stat-lbl"><b>Total Pesan</b></div></div>
+    </div>
+    <div class="panel-label" style="margin-bottom:10px;"><b>Model Paling Sering Dipakai</b></div>
+    <div id="stat-mode-bars"></div>
+  </div>
+</div>
+
+<!-- Referral Sheet -->
+<div class="vx-sheet-backdrop" id="ref-backdrop" role="dialog" aria-modal="true" aria-label="Referral dan Rewards" onclick="if(event.target===this) closeReferralModal()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeReferralModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg><b> Referral & Rewards</b></div>
+    <div class="vx-sheet-sub"><b>Ajak Temen Pakai Vaeltrix, Kalian Berdua Dapet Bonus Trial Premium.</b></div>
+    <div class="panel-label"><b>Kode Referral Kamu</b></div>
+    <div class="ref-code-box">
+      <div class="ref-code-text" id="ref-code-display">------</div>
+      <button class="ref-small-btn" onclick="copyReferralLink()"><b>Salin Link</b></button>
+    </div>
+    <div class="panel-label"><b>Punya Kode Dari Teman?</b></div>
+    <input type="text" class="panel-input" id="ref-input" placeholder="Masukkan Kode Referral..." style="text-transform:uppercase;letter-spacing:2px;">
+    <button class="panel-btn blue" onclick="redeemReferral()"><b>Klaim Bonus Trial</b></button>
+    <div class="panel-status" id="ref-status"></div>
+  </div>
+</div>
+
+<!-- Diagnostics Sheet (v1.8.0) -->
+<div class="vx-sheet-backdrop" id="diag-backdrop" role="dialog" aria-modal="true" aria-label="Diagnostics" onclick="if(event.target===this) closeDiagnosticsModal()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeDiagnosticsModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><b> Diagnostics</b></div>
+    <div class="vx-sheet-sub"><b>Cek Status Browser & Provider — Gak Ngirim Request Beneran Ke AI, Jadi Gak Makan Kuota API Kamu.</b></div>
+    <div class="panel-label"><b>Browser</b></div>
+    <div id="diag-browser-list"></div>
+    <div class="panel-label" style="margin-top:14px;"><b>Provider</b></div>
+    <div id="diag-provider-list"></div>
+    <button class="panel-btn blue" style="margin-top:14px;" onclick="renderDiagnostics()"><b>Jalankan Ulang</b></button>
+  </div>
+</div>
+
+<!-- ============ SETTINGS SHEET ============ -->
+<div class="vx-sheet-backdrop" id="settings-backdrop" role="dialog" aria-modal="true" aria-label="Pengaturan">
+  <div class="vx-sheet">
+    <div class="settings-topbar">
+      <button class="settings-back-btn" onclick="closeSettingsModal()" aria-label="Kembali">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <div class="settings-topbar-title" style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Pengaturan</div>
+    </div>
+    <div class="settings-body">
+
+    <div class="settings-profile-row" onclick="openEditProfileModal()">
+      <div class="settings-avatar" id="settings-avatar-initial">V</div>
+      <div>
+        <div class="settings-profile-name" id="settings-profile-name"><b>Vaeltrix User</b></div>
+        <div class="settings-profile-email" id="settings-profile-email"><b>Belum Ada Email Tersimpan</b></div>
+      </div>
+      <svg class="settings-row-chev" style="margin-left:auto;" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-row" onclick="openAccountModal()">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+      <div class="settings-row-text"><b>Akun VaeltrixLabs</b></div>
+      <div class="settings-row-value" id="settings-val-account"><b>Belum Login</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-row" onclick="closeSettingsModal(); openModeSheet();">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+      <div class="settings-row-text"><b>AI Model</b></div>
+      <div class="settings-row-value" id="settings-val-model"><b>Vaeltrix Flash 1.8</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-row" onclick="openAccountSecurity()">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+      <div class="settings-row-text"><b>Account Security</b></div>
+      <div class="settings-row-value" id="settings-val-security"><b>Standard</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-row" onclick="openFeedbackModal()">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+      <div class="settings-row-text"><b>Feedback</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-section-label"><b>Stats & Rewards</b></div>
+    <div class="settings-row" onclick="closeSettingsModal(); openStatsModal();">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></span>
+      <div class="settings-row-text"><b>Vaeltrix Stats</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="closeSettingsModal(); openReferralModal();">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+      <div class="settings-row-text"><b>Referral & Rewards</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-section-label"><b>Sistem</b></div>
+    <div class="settings-row" onclick="closeSettingsModal(); openDiagnosticsModal();">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+      <div class="settings-row-text"><b>Diagnostics</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-section-label"><b>Personalization</b></div>
+    <div class="settings-row" onclick="togglePanel('memory-panel')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44A2.5 2.5 0 0 1 4 17.5v-1a2.5 2.5 0 0 1-1.44-4.5A2.5 2.5 0 0 1 4 8.5v-1A2.5 2.5 0 0 1 6.5 5a2.5 2.5 0 0 1 3-3z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44A2.5 2.5 0 0 0 20 17.5v-1a2.5 2.5 0 0 0 1.44-4.5A2.5 2.5 0 0 0 20 8.5v-1A2.5 2.5 0 0 0 17.5 5a2.5 2.5 0 0 0-3-3z"/></svg></span>
+      <div class="settings-row-text"><b>Vaeltrix Memory</b></div>
+      <div class="settings-row-value" id="settings-val-memory"><b>Auto-Save On</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div id="memory-panel" class="panel" style="margin:0 20px 10px;">
+      <div class="panel-label"><b>Yang Vaeltrix Ingat Tentang Kamu</b></div>
+      <div id="memory-list"></div>
+      <button class="panel-btn blue" style="margin-top:6px;border-color:rgba(255,100,100,0.3);color:#ff8080;background:rgba(255,60,60,0.08);" onclick="clearMemory()"><b>Hapus Semua Memory</b></button>
+    </div>
+
+    <div class="settings-row" onclick="togglePanel('persona-panel')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+      <div class="settings-row-text"><b>Gaya Bicara Vaeltrix</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div id="persona-panel" class="panel" style="margin:0 20px 10px;">
+      <div class="panel-label"><b>Pilih Gaya Bicara (Persona)</b></div>
+      <div id="persona-list" style="display:flex;flex-direction:column;gap:6px;"></div>
+    </div>
+
+    <div class="settings-row" onclick="togglePanel('api-panel')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg></span>
+      <div class="settings-row-text"><b>Custom API Keys</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div id="api-panel" class="panel" style="margin:0 20px 10px;">
+      <div class="panel-label">Gemini API Key</div>
+      <input type="password" class="panel-input" id="api-key-input" placeholder="AIza...">
+      <button class="panel-btn blue" onclick="saveApiKey()">Simpan Gemini Key</button>
+      <div style="margin-top:10px;">
+        <div class="panel-label">Groq API Key (Mode Lite)</div>
+        <input type="password" class="panel-input" id="groq-key-input" placeholder="gsk_...">
+        <button class="panel-btn blue" onclick="saveGroqKey()">Simpan Groq Key</button>
+      </div>
+      <div style="margin-top:10px;">
+        <div class="panel-label">Tavily API Key (Pencarian Web)</div>
+        <input type="password" class="panel-input" id="tavily-key-input" placeholder="tvly-...">
+        <button class="panel-btn blue" onclick="saveTavilyKey()">Simpan Tavily Key</button>
+        <div style="font-size:10px;color:var(--muted);margin-top:6px;line-height:1.4;">Kalau Kosong Atau Error, Otomatis Fallback Ke DuckDuckGo (Gak Perlu Key).</div>
+      </div>
+      <div style="margin-top:10px;">
+        <div class="panel-label">OpenRouter API Key (Fallback Cadangan)</div>
+        <input type="password" class="panel-input" id="openrouter-key-input" placeholder="sk-or-...">
+        <button class="panel-btn blue" onclick="saveOpenRouterKey()">Simpan OpenRouter Key</button>
+        <div style="font-size:10px;color:var(--muted);margin-top:6px;line-height:1.4;">Opsional — Cuma Kepake Otomatis Kalau Gemini DAN Groq Dua-Duanya Gagal. Kosongin Aja Kalau Gak Perlu.</div>
+      </div>
+      <div style="margin-top:10px;">
+        <div class="panel-label">Pollinations API Key (Edit Foto)</div>
+        <input type="password" class="panel-input" id="pollinations-key-input" placeholder="pk_...">
+        <button class="panel-btn blue" onclick="savePollinationsKey()">Simpan Pollinations Key</button>
+        <div style="font-size:10px;color:var(--muted);margin-top:6px;line-height:1.4;">Butuh Key Gratis Tipe <b>pk_</b> (Publishable) Dari enter.pollinations.ai Buat Fitur Edit Foto — JANGAN Pakai Key Tipe sk_ Di Sini.</div>
+      </div>
+      <div style="margin-top:10px;">
+        <div class="panel-label">ElevenLabs API Key (Play Voice)</div>
+        <input type="password" class="panel-input" id="elevenlabs-key-input" placeholder="sk_...">
+        <button class="panel-btn blue" onclick="saveElevenLabsKey()">Simpan ElevenLabs Key</button>
+        <div style="font-size:10px;color:var(--muted);margin-top:6px;line-height:1.4;">Opsional — Buat Suara Play Voice Yang Lebih Natural (Berbayar, Ada Kredit Gratis ~10.000 Karakter/Bulan). Kosong Atau Kredit Abis = Otomatis Balik Ke Suara Browser Gratis. Pilih Suaranya Di Menu <b>Play Voice</b>.</div>
+      </div>
+      <div class="panel-status" id="api-status"></div>
+    </div>
+
+    <div class="settings-row" onclick="openPremiumModal()">
+      <span class="settings-row-icon" style="color:var(--gold);"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+      <div class="settings-row-text" style="color:var(--gold);"><b>Upgrade Plans</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-section-label"><b>General</b></div>
+    <div class="settings-row" onclick="openOptionPicker('voice')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4"/></svg></span>
+      <div class="settings-row-text"><b>Play Voice</b></div>
+      <div class="settings-row-value" id="settings-val-voice"><b>Google TTS</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="openOptionPicker('theme')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      <div class="settings-row-text"><b>Tema Settings</b></div>
+      <div class="settings-row-value" id="settings-val-theme"><b>Dark</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="openOptionPicker('font')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg></span>
+      <div class="settings-row-text"><b>Font Size</b></div>
+      <div class="settings-row-value" id="settings-val-font">Standard</div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="openOptionPicker('effort')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+      <div class="settings-row-text"><b>Upaya</b></div>
+      <div class="settings-row-value" id="settings-val-effort">Sedang</div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="openOptionPicker('lang')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+      <div class="settings-row-text"><b>Language</b></div>
+      <div class="settings-row-value" id="settings-val-lang"><b>Indonesia</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="toggleFeatureManagement()">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+      <div class="settings-row-text"><b>Feature Management</b></div>
+      <div class="settings-row-value" id="settings-val-beta">Beta Off</div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="toggleNotificationSettings()">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span>
+      <div class="settings-row-text"><b>Notification Settings</b></div>
+      <div class="settings-row-value" id="settings-val-notif">Off</div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-section-label"></b>About</b></div>
+    <div class="settings-row" onclick="openAboutModal()">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>
+      <div class="settings-row-text"><b>About VaeltrixAI</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="checkForUpdates()">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></span>
+      <div class="settings-row-text"><b>Check for Updates</b></div>
+      <div class="settings-row-value">1.8</div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="settings-section-label"><b>Legal &amp; Data</b></div>
+    <div class="settings-row" onclick="openLegalModal('terms')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+      <div class="settings-row-text"><b>Terms of Service</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="openLegalModal('privacy')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+      <div class="settings-row-text"><b>Privacy Policy</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="openLegalModal('cookie')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8.5 8.5v.01M16 15.5v.01M12 12v.01M11 17v.01M7 14v.01"/></svg></span>
+      <div class="settings-row-text"><b>Cookie Notice</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="openLegalModal('contact')">
+      <span class="settings-row-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+      <div class="settings-row-text"><b>Contact Us</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="settings-row" onclick="confirmDeleteAllChats()">
+      <span class="settings-row-icon" style="color:#ff8080;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span>
+      <div class="settings-row-text" style="color:#ff8080;"><b>Delete All Chats</b></div>
+      <svg class="settings-row-chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============ LEGAL MODAL (Terms / Privacy / Cookie / Contact) ============ -->
+<div id="legal-modal" style="display:none;position:fixed;inset:0;z-index:340;background:rgba(0,0,0,0.7);-webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);align-items:flex-end;justify-content:center;">
+  <div class="modal-sheet" style="border-color:var(--glass-border);position:relative;max-height:80vh;overflow-y:auto;">
+    <button class="vx-close-x" onclick="closeLegalModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-pill"></div>
+    <div class="modal-title" style="color:var(--blue);" id="legal-modal-title"></div>
+    <div class="modal-sub" id="legal-modal-body" style="white-space:pre-line;text-align:left;line-height:1.6;"></div>
+  </div>
+</div>
+
+<!-- ============ EDIT PROFILE SHEET ============ -->
+<div class="vx-sheet-backdrop" id="edit-profile-backdrop" role="dialog" aria-modal="true" aria-label="Edit Profil" onclick="if(event.target===this) closeEditProfileModal()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeEditProfileModal()" aria-label="Tutup"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+
+    <div class="edit-profile-avatar-wrap">
+      <div class="edit-profile-avatar" id="edit-profile-avatar-preview">V</div>
+      <input type="file" id="edit-profile-photo-input" accept="image/*" style="display:none" onchange="handleProfilePhotoSelect(event)" aria-hidden="true">
+    </div>
+    <div class="edit-profile-avatar-wrap" style="margin-top:-46px;margin-bottom:16px;">
+      <button class="edit-profile-cam-btn" onclick="document.getElementById('edit-profile-photo-input').click()" aria-label="Ganti Foto Profil" style="position:relative;left:32px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+      </button>
+    </div>
+
+    <div class="edit-profile-field">
+      <label class="edit-profile-label" for="edit-profile-name-input"><b>Nama</b></label>
+      <input type="text" class="edit-profile-input" id="edit-profile-name-input" placeholder="Nama Kamu" autocomplete="off" maxlength="40">
+    </div>
+    <div class="edit-profile-field">
+      <label class="edit-profile-label" for="edit-profile-username-input"><b>Nama Pengguna</b></label>
+      <input type="text" class="edit-profile-input" id="edit-profile-username-input" placeholder="username" autocomplete="off" maxlength="30">
+    </div>
+
+    <div class="edit-profile-hint"><b>Profil Kamu Membantu Orang Lain Mengenali Kamu Di VaeltrixAI.</b></div>
+
+    <button class="edit-profile-save-btn" onclick="saveProfile()"><b>Simpan Profil</b></button>
+    <button class="edit-profile-cancel-btn" onclick="closeEditProfileModal()">Batal</button>
+  </div>
+</div>
+
+<!-- Option Picker Sheet (dipakai bareng buat Play Voice / Theme / Font Size / Language) -->
+<div class="vx-sheet-backdrop" id="option-picker-backdrop" role="dialog" aria-modal="true" aria-label="Pilih Opsi" onclick="if(event.target===this) closeOptionPicker()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeOptionPicker()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title" id="option-picker-title">PILIH</div>
+    <div class="vx-sheet-sub" id="option-picker-sub"></div>
+    <div id="option-picker-list" style="display:flex;flex-direction:column;gap:6px;"></div>
+  </div>
+</div>
+
+<!-- Account Security (PIN) Modal -->
+<div id="pin-modal" style="display:none;position:fixed;inset:0;z-index:340;background:rgba(0,0,0,0.7);-webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);align-items:flex-end;justify-content:center;">
+  <div class="modal-sheet" style="border-color:var(--glass-border);position:relative;">
+    <button class="vx-close-x" onclick="closePinModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-pill"></div>
+    <div class="modal-title" style="color:var(--blue);" id="pin-modal-title">ACCOUNT SECURITY</div>
+    <div class="modal-sub" id="pin-modal-sub">Amankan VaeltrixAI Kamu Dengan PIN 4-6 Digit. PIN Ini Cuma Tersimpan Di Device Ini, Bukan Di Server.</div>
+    <input type="password" inputmode="numeric" maxlength="6" class="modal-input" id="pin-input-1" placeholder="PIN Baru (4-6 Digit)" style="border-color:var(--glass-border);">
+    <input type="password" inputmode="numeric" maxlength="6" class="modal-input" id="pin-input-2" placeholder="Ulangi PIN" style="border-color:var(--glass-border);">
+    <div class="modal-error" id="pin-modal-error"></div>
+    <button class="modal-activate-btn" style="background:var(--blue);color:var(--bg);" onclick="savePinSecurity()">SIMPAN PIN</button>
+    <button class="modal-cancel" id="pin-remove-btn" style="display:none;color:#ff8080;" onclick="removePinSecurity()">Matikan PIN</button>
+    <button class="modal-cancel" onclick="closePinModal()">Batal</button>
+  </div>
+</div>
+
+<!-- Akun VaeltrixLabs Modal (Phase 3 -- jembatan login, unlock jalur chat backend Phase 2) -->
+<div id="account-modal" style="display:none;position:fixed;inset:0;z-index:340;background:rgba(0,0,0,0.7);-webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);align-items:flex-end;justify-content:center;">
+  <div class="modal-sheet" style="border-color:var(--glass-border);position:relative;">
+    <button class="vx-close-x" onclick="closeAccountModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-pill"></div>
+    <div class="modal-title" style="color:var(--blue);">AKUN VAELTRIXLABS</div>
+
+    <div id="account-form-view">
+      <div class="modal-sub" id="account-modal-sub">Login Buat Sinkronin Percakapan &amp; Akses Model Lewat Server VaeltrixLabs.</div>
+      <button class="modal-cancel" onclick="startVaeltrixOAuth('google')">Lanjut Dengan Google</button>
+      <button class="modal-cancel" onclick="startVaeltrixOAuth('github')">Lanjut Dengan Github</button>
+      <div class="modal-sub" style="text-align:center;font-size:11px;opacity:0.6;margin:8px 0;">Atau Pakai Email</div>
+      <input type="text" class="modal-input" id="account-name-input" placeholder="Nama (Cuma Buat Daftar)" autocomplete="name" style="border-color:var(--glass-border);display:none;">
+      <input type="email" class="modal-input" id="account-email-input" placeholder="Email" autocomplete="email" style="border-color:var(--glass-border);">
+      <input type="password" class="modal-input" id="account-password-input" placeholder="Password" autocomplete="current-password" style="border-color:var(--glass-border);">
+      <div class="modal-error" id="account-modal-error"></div>
+      <button class="modal-activate-btn" style="background:var(--blue);color:var(--bg);" id="account-submit-btn" onclick="submitAccountForm()">LOGIN</button>
+      <button class="modal-cancel" id="account-toggle-mode-btn" onclick="toggleAccountFormMode()">Belum Punya Akun? Daftar Di Sini</button>
+      <button class="modal-cancel" id="account-resend-verification-btn" style="display:none;" onclick="resendVerificationEmail()">Kirim Ulang Email Verifikasi</button>
+    </div>
+
+    <div id="account-loggedin-view" style="display:none;">
+      <div class="modal-sub">Login Sebagai:</div>
+      <div class="modal-sub" id="account-loggedin-email" style="font-weight:700;"></div>
+      <div class="modal-sub" id="account-plan-info" style="font-size:12px;opacity:0.8;"></div>
+      <button class="modal-cancel" id="account-upgrade-premium-btn" style="display:none;" onclick="startVaeltrixCheckout('premium')">Upgrade Ke Premium</button>
+      <button class="modal-cancel" id="account-upgrade-pro-btn" style="display:none;" onclick="startVaeltrixCheckout('pro')">Upgrade Ke Pro</button>
+      <button class="modal-cancel" id="account-manage-billing-btn" style="display:none;" onclick="openVaeltrixBillingPortal()">Kelola Langganan</button>
+      <button class="modal-cancel" id="account-upload-btn" style="display:none;" onclick="startVaeltrixUploadLocalData()"></button>
+      <button class="modal-cancel" onclick="toggleChangePasswordView()">Ganti Password</button>
+      <div id="account-change-password-view" style="display:none;">
+        <input type="password" class="modal-input" id="current-password-input" placeholder="Password Saat Ini" autocomplete="current-password" style="border-color:var(--glass-border);">
+        <input type="password" class="modal-input" id="new-password-input" placeholder="Password Baru (Min. 8 Karakter)" autocomplete="new-password" style="border-color:var(--glass-border);">
+        <div class="modal-error" id="change-password-error"></div>
+        <button class="modal-activate-btn" style="background:var(--blue);color:var(--bg);" onclick="submitChangePassword()">SIMPAN PASSWORD BARU</button>
+      </div>
+      <button class="modal-cancel" style="color:#ff8080;" onclick="confirmDeleteAccount()">Hapus Akun</button>
+      <button class="modal-cancel" style="color:#ff8080;" onclick="vaeltrixLogout()">Logout</button>
+    </div>
+
+    <button class="modal-cancel" onclick="closeAccountModal()">Tutup</button>
+  </div>
+</div>
+
+<!-- Feedback Modal -->
+<div id="feedback-modal" style="display:none;position:fixed;inset:0;z-index:340;background:rgba(0,0,0,0.7);-webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);align-items:flex-end;justify-content:center;">
+  <div class="modal-sheet" style="border-color:var(--glass-border);position:relative;">
+    <button class="vx-close-x" onclick="closeFeedbackModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-pill"></div>
+    <div class="modal-title" style="color:var(--blue);">FEEDBACK</div>
+    <div class="modal-sub">Ada Saran, Bug, Atau Kritik Buat VaeltrixAI? Tulis Di Sini, Tuan.</div>
+    <textarea id="feedback-input" placeholder="Tulis Masukan Kamu..." rows="4" style="width:100%;background:rgba(0,0,0,0.4);border:1px solid var(--glass-border);color:var(--white);font-family:'DM Sans',sans-serif;font-size:13px;padding:12px 14px;border-radius:12px;outline:none;resize:vertical;margin-bottom:10px;"></textarea>
+    <div class="modal-error" id="feedback-error"></div>
+    <button class="modal-activate-btn" style="background:var(--blue);color:var(--bg);" onclick="sendFeedback()">KIRIM FEEDBACK</button>
+    <button class="modal-cancel" onclick="closeFeedbackModal()">Batal</button>
+  </div>
+</div>
+
+<!-- About Modal -->
+<div id="about-modal" style="display:none;position:fixed;inset:0;z-index:340;background:rgba(0,0,0,0.7);-webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);align-items:flex-end;justify-content:center;">
+  <div class="modal-sheet" style="border-color:var(--glass-border);position:relative;">
+    <button class="vx-close-x" onclick="closeAboutModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="modal-pill"></div>
+    <div class="modal-title" style="color:var(--blue);display:flex;align-items:center;gap:9px;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg> VaeltrixAI</div>
+    <div class="modal-sub"><section class="story-intro">
+    <h2>Dari Sebuah Ide Menjadi VaeltrixAI</h2>
+
+    <p>
+        <strong>VaeltrixAI tidak lahir sebagai platform besar.</strong>
+        Ia dimulai dari sebuah ide, rasa penasaran, dan keinginan untuk membangun sesuatu
+        yang benar-benar dibuat sendiri.
+    </p>
+
+    <p>
+        Sebelum VaeltrixAI berada di titik ini, perjalanan panjang telah dimulai dari
+        berbagai eksperimen, percobaan, kesalahan, dan proyek-proyek sebelumnya.
+        Setiap pengalaman tersebut menjadi bagian dari proses yang akhirnya membawa
+        lahirnya VaeltrixAI.
+    </p>
+</section>
+
+<br>
+
+<section class="story-beginning">
+    <h3>01 — Semuanya Berawal dari Keinginan untuk Membangun</h3>
+
+    <p>
+        Pada awalnya, VaeltrixAI hanyalah sebuah gagasan sederhana:
+        <strong>bagaimana jika seorang developer dapat membangun platform AI-nya sendiri?</strong>
+    </p>
+
+    <p>
+        Tidak ada tim besar. Tidak ada perusahaan teknologi raksasa di belakangnya.
+        Tidak ada infrastruktur yang sempurna sejak awal.
+        Yang ada hanyalah proses belajar, mencoba, gagal, memperbaiki, lalu mencoba lagi.
+    </p>
+
+    <p>
+        Dari situlah perjalanan panjang VaeltrixAI dimulai.
+    </p>
+</section>
+
+<br>
+
+<section class="story-development">
+    <h3>02 — Dari Eksperimen Menjadi Sebuah Produk</h3>
+
+    <p>
+        VaeltrixAI kemudian mulai dibangun sedikit demi sedikit.
+        Antarmuka dibuat, sistem percakapan dikembangkan, integrasi model AI diuji,
+        dan berbagai fitur mulai ditambahkan.
+    </p>
+
+    <p>
+        Pada tahap awal, banyak hal masih jauh dari sempurna.
+        Struktur kode terus berubah, fitur berkali-kali dibongkar dan dibangun kembali,
+        berbagai bug muncul, dan banyak keputusan teknis harus dipelajari melalui
+        pengalaman langsung.
+    </p>
+
+    <p>
+        Namun setiap masalah memberikan sesuatu yang berharga:
+        <strong>pengalaman.</strong>
+    </p>
+</section>
+
+<br>
+
+<section class="story-evolution">
+    <h3>03 — VaeltrixAI Mulai Berevolusi</h3>
+
+    <p>
+        Seiring waktu, VaeltrixAI berkembang dari sekadar antarmuka chatbot menjadi
+        sebuah platform AI dengan berbagai kemampuan.
+    </p>
+
+    <div class="story-features">
+        <p>• Percakapan dan manajemen chat</p>
+        <p>• Berbagai pilihan model AI</p>
+        <p>• Reasoning dan thinking system</p>
+        <p>• Web Search dan Deep Research</p>
+        <p>• Vision dan pemrosesan berbagai input</p>
+        <p>• Memory dan personalisasi</p>
+        <p>• Code generation</p>
+        <p>• Image generation</p>
+        <p>• Artifact dan pengembangan multi-file</p>
+        <p>• Sistem fallback dan pengelolaan model</p>
+    </div>
+
+    <p>
+        Setiap fitur tidak muncul begitu saja.
+        Semuanya merupakan hasil dari proses eksperimen dan pengembangan
+        yang dilakukan secara bertahap.
+    </p>
+</section>
+
+<br>
+
+<section class="story-challenges">
+    <h3>04 — Tidak Selalu Berjalan Mulus</h3>
+
+    <p>
+        Perjalanan VaeltrixAI juga dipenuhi dengan berbagai tantangan.
+    </p>
+
+    <p>
+        Bug, error, rate limit, server yang bermasalah, perubahan arsitektur,
+        kegagalan deployment, hingga berbagai eksperimen yang tidak berjalan sesuai
+        rencana menjadi bagian dari perjalanan ini.
+    </p>
+
+    <p>
+        Ada saat ketika sistem harus diperbaiki.
+        Ada saat ketika fitur harus ditunda.
+        Ada pula saat ketika seluruh bagian tertentu harus dipikirkan ulang.
+    </p>
+
+    <p>
+        Tetapi setiap masalah tersebut membawa VaeltrixAI satu langkah lebih jauh.
+    </p>
+</section>
+
+<br>
+
+<section class="story-community">
+    <h3>05 — Dari Beberapa Orang Menjadi Ratusan Pengguna</h3>
+
+    <p>
+        Apa yang awalnya hanya dicoba oleh beberapa orang perlahan mulai digunakan
+        oleh semakin banyak pengguna.
+    </p>
+
+    <p>
+        Pertumbuhan tersebut menjadi salah satu titik penting dalam perjalanan VaeltrixAI.
+        Bukan hanya karena jumlah pengguna bertambah, tetapi karena setiap pengguna
+        membawa sesuatu yang baru:
+        <strong>feedback, laporan bug, ide, kritik, dan motivasi untuk terus berkembang.</strong>
+    </p>
+
+    <p>
+        Hingga perjalanan ini mencapai <strong>ratusan pengguna</strong>,
+        VaeltrixAI mulai terasa bukan lagi sekadar eksperimen pribadi,
+        melainkan sebuah proyek yang benar-benar digunakan oleh orang lain.
+    </p>
+</section>
+
+<br>
+
+<section class="story-present">
+    <h3>06 — VaeltrixAI Hari Ini</h3>
+
+    <p>
+        Hari ini, VaeltrixAI terus berkembang menjadi sesuatu yang jauh lebih besar
+        dibandingkan gagasan awalnya.
+    </p>
+
+    <p>
+        Platform ini terus mendapatkan pembaruan, perbaikan stabilitas,
+        peningkatan keamanan, penyempurnaan antarmuka, pengembangan fitur,
+        serta eksperimen terhadap berbagai model AI dan teknologi baru.
+    </p>
+
+    <p>
+        Namun perjalanan ini masih jauh dari selesai.
+    </p>
+
+    <p>
+        VaeltrixAI masih terus dibangun, diuji, diperbaiki, dan dikembangkan.
+        Setiap versi baru adalah bagian dari perjalanan menuju platform yang
+        lebih matang.
+    </p>
+</section>
+
+<br>
+
+<section class="story-philosophy">
+    <h3>07 — Lebih dari Sekadar Kode</h3>
+
+    <blockquote>
+        <strong>
+            "Satu baris kode mungkin terlihat kecil,
+            tetapi jutaan keputusan kecil dapat membentuk sesuatu yang besar."
+        </strong>
+    </blockquote>
+
+    <p>
+        VaeltrixAI adalah bukti bahwa sebuah proyek tidak selalu harus dimulai
+        dengan sumber daya yang besar.
+    </p>
+
+    <p>
+        Kadang semuanya dimulai dari satu orang yang memiliki sebuah ide,
+        kemudian memilih untuk benar-benar mengerjakannya.
+    </p>
+
+    <p>
+        Dari kesalahan lahir pengalaman.
+        Dari bug lahir pemahaman.
+        Dari kegagalan lahir perbaikan.
+        Dan dari setiap pembaruan, VaeltrixAI terus menemukan bentuknya.
+    </p>
+</section>
+
+<br>
+
+<section class="story-future">
+    <h3>08 — Perjalanan Ini Belum Selesai</h3>
+
+    <p>
+        Apa yang terlihat hari ini bukanlah akhir dari VaeltrixAI.
+        Ini hanyalah salah satu bagian dari perjalanan panjangnya.
+    </p>
+
+    <p>
+        Masih banyak sistem yang akan dikembangkan,
+        banyak fitur yang akan diuji,
+        banyak teknologi yang akan dipelajari,
+        dan tentu saja masih akan ada banyak bug yang harus diperbaiki.
+    </p>
+
+    <p>
+        Tetapi selama proses pengembangan terus berjalan,
+        VaeltrixAI akan terus bergerak maju.
+    </p>
+</section>
+
+<br>
+
+<section class="story-quote">
+    <div class="story-highlight">
+        <p>
+            <strong>
+                "Built with Passion by RajaCoders."
+            </strong>
+        </p>
+
+        <p>
+            Sebuah pengingat bahwa karya besar tidak selalu dimulai
+            dengan tim yang besar.
+            Terkadang, semuanya dimulai dari satu orang,
+            satu ide, dan keberanian untuk memulainya.
+        </p>
+    </div>
+</section>
+
+<br>
+
+<section class="story-thanks">
+    <p>
+        <strong>Terima kasih.</strong>
+    </p>
+
+    <p>
+        Untuk setiap orang yang pernah mencoba VaeltrixAI,
+        memberikan feedback, menemukan bug, memberikan ide,
+        atau sekadar mengikuti perjalanan ini —
+        kalian adalah bagian dari cerita VaeltrixAI.
+    </p>
+
+    <p>
+        Perjalanan ini masih panjang.
+        Dan bab berikutnya sedang ditulis.
+    </p>
+</section>
+
+<br>
+
+<footer class="story-footer">
+    <p>
+        <strong>VaeltrixAI</strong>
+        <br>
+        Built by <strong>RajaCoders</strong>
+        <br>
+        <span>© RajaCoders × VaeltrixAI 2026</span>
+    </p>
+</footer>
+
+</div>
+    <button class="modal-cancel" onclick="closeAboutModal()"><b>Tutup</b></button>
+  </div>
+</div>
+
+<!-- Export Sheet -->
+<div class="vx-sheet-backdrop" id="export-backdrop" role="dialog" aria-modal="true" aria-label="Vaeltrix Export" onclick="if(event.target===this) closeExportModal()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeExportModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Vaeltrix Export</div>
+    <div class="vx-sheet-sub">Simpan Chat Ini Buat Dokumentasi Atau Dikirim Ke Orang Lain.</div>
+    <div class="export-opt" onclick="exportChat('md')">
+      <div class="qp-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div><div class="qp-title">Export Ke Markdown (.md)</div><div class="qp-desc">Cocok Buat Disimpan Atau Dibuka Di Notion/Obsidian</div></div>
+    </div>
+    <div class="export-opt" onclick="exportChat('pdf')">
+      <div class="qp-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <div><div class="qp-title">Export Ke PDF</div><div class="qp-desc">Buka Dialog Print, Pilih "Save As PDF"</div></div>
+    </div>
+    <div class="more-sep" style="margin:10px 0;"></div>
+    <div class="export-opt" onclick="exportAllSessions()">
+      <div class="qp-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1z"/><path d="M10 12h4"/></svg></div>
+      <div><div class="qp-title">Backup Semua Riwayat (.json)</div><div class="qp-desc">Simpan Seluruh Chat, Memory, Dan Stats Ke 1 File</div></div>
+    </div>
+    <div class="export-opt" onclick="document.getElementById('import-file-input').click()">
+      <div class="qp-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+      <div><div class="qp-title">Import Riwayat (.json)</div><div class="qp-desc">Pulihkan Backup Dari HP/Browser Lain</div></div>
+    </div>
+    <input type="file" id="import-file-input" accept="application/json" style="display:none" onchange="handleImportFile(event)">
+  </div>
+</div>
+
+<!-- Share Sheet -->
+<div class="vx-sheet-backdrop" id="share-backdrop" role="dialog" aria-modal="true" aria-label="Vaeltrix Share" onclick="if(event.target===this) closeShareModal()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeShareModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><b> Vaeltrix Share</b></div>
+    <div class="vx-sheet-sub">Bikin Link Read-Only Dari Chat Ini Buat Dibagikan.</div>
+    <button class="panel-btn blue" onclick="generateShareLink()">Buat Link Share</button>
+    <input type="text" class="panel-input" id="share-link-out" placeholder="Link akan muncul di sini..." readonly style="margin-top:10px;">
+    <button class="ref-small-btn" style="width:100%;margin-top:6px;" onclick="copyShareLink()"><b>Salin Link</b></button>
+    <div class="panel-status" id="share-status"></div>
+  </div>
+</div>
+
+<!-- Search Sheet -->
+<div class="vx-sheet-backdrop" id="search-backdrop" role="dialog" aria-modal="true" aria-label="Cari Chat" onclick="if(event.target===this) closeSearchModal()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeSearchModal()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><b>Cari Chat</b></div>
+    <div class="vx-sheet-sub"><b>Cari Kata Kunci Di Semua Riwayat Percakapan Kamu.</b></div>
+    <div id="search-input-wrap">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="search-input" placeholder="Ketik Kata Kunci..." oninput="debouncedSearch()" autocomplete="off">
+    </div>
+    <div id="search-results-list"></div>
+  </div>
+</div>
+
+<!-- Vaeltrix Projects/Workspace Sheet -->
+<div class="vx-sheet-backdrop" id="projects-backdrop" role="dialog" aria-modal="true" aria-label="Vaeltrix Projects" onclick="if(event.target===this) closeProjectsPanel()">
+  <div class="vx-sheet" style="position:relative;max-height:86vh;">
+    <button class="vx-close-x" onclick="closeProjectsPanel()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+
+    <div id="projects-list-view">
+      <div class="vx-sheet-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg> Vaeltrix Projects</div>
+      <div class="vx-sheet-sub">Kumpulin Chat + Instruksi Khusus + File Referensi Jadi Satu Ruang Kerja.</div>
+      <button class="panel-btn blue" style="margin-bottom:12px;" onclick="startCreateProject()">+ Project Baru</button>
+      <div id="new-project-input-row" style="display:none;gap:6px;margin-bottom:14px;">
+        <input type="text" class="panel-input" id="new-project-name-input" placeholder="Nama Project..." style="margin:0;flex:1;">
+        <button class="panel-btn blue" style="width:auto;padding:0 14px;margin:0;" onclick="confirmCreateProject()">Buat</button>
+      </div>
+      <div id="projects-list"></div>
+    </div>
+
+    <div id="projects-detail-view" style="display:none;">
+      <button class="ref-small-btn" style="margin-bottom:12px;" onclick="backToProjectsList()">&larr; Semua Project</button>
+      <div class="vx-sheet-title" id="project-detail-name">Project</div>
+      <button class="panel-btn blue" style="margin-bottom:14px;" id="project-detail-start-chat-btn">+ Chat Baru Di Project Ini</button>
+
+      <div class="panel-label">Instruksi Khusus (System Prompt)</div>
+      <textarea class="panel-input" id="project-instructions-input" rows="4" style="height:auto;resize:vertical;line-height:1.5;" placeholder="Misal: Selalu Jawab Pakai Gaya Formal, Fokus Ke Topik Marketing, Dst..."></textarea>
+      <button class="panel-btn blue" style="margin-bottom:14px;" onclick="saveProjectInstructions()">Simpan Instruksi</button>
+
+      <div class="panel-label">File Referensi (Maks 8, 1MB/File)</div>
+      <input type="file" id="project-file-input" multiple accept=".txt,.md,.csv,.json,.js,.py,.html,.css" style="display:none" onchange="handleProjectFileSelect(event)">
+      <button class="ref-small-btn" style="width:100%;margin-bottom:8px;" onclick="document.getElementById('project-file-input').click()">+ Tambah File</button>
+      <div id="project-files-list" style="margin-bottom:14px;"></div>
+
+      <div class="panel-label">Chat Di Project Ini</div>
+      <div id="project-sessions-list" style="margin-bottom:14px;"></div>
+
+      <button class="panel-btn" style="border:1px solid rgba(255,100,100,0.3);color:#ff8080;background:rgba(255,60,60,0.08);" onclick="deleteProjectConfirm()">Hapus Project Ini</button>
+    </div>
+  </div>
+</div>
+
+<!-- Vaeltrix Artifacts List Sheet (Tombol Sidebar) -->
+<div class="vx-sheet-backdrop" id="artifacts-list-backdrop" role="dialog" aria-modal="true" aria-label="Vaeltrix Artifacts" onclick="if(event.target===this) closeArtifactsListPanel()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeArtifactsListPanel()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Vaeltrix Artifacts</div>
+    <div class="vx-sheet-sub">Semua Kode/Dokumen Yang Layak Dibuka Sebagai Artifact Di Seluruh Chat Kamu.</div>
+    <div id="artifacts-list"></div>
+  </div>
+</div>
+
+<!-- Vaeltrix Project Panel — "N Artefak" (proyek multi-file, tampil kalau 1 jawaban punya >=2 file bernama) -->
+<div class="vx-sheet-backdrop" id="project-panel-backdrop" role="dialog" aria-modal="true" aria-label="Artefak" onclick="if(event.target===this) closeProjectPanel()">
+  <div class="vx-sheet" style="position:relative;">
+    <button class="vx-close-x" onclick="closeProjectPanel()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="vx-sheet-title"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg> Artefak</div>
+    <div class="vx-sheet-sub" id="project-panel-count">Beberapa File Dari Jawaban Ini.</div>
+    <div id="artefak-files-list"></div>
+    <button class="artefak-download-all-btn" id="project-download-all-btn" onclick="downloadAllProjectFiles()"><b>Unduh Semua (ZIP)</b></button>
+  </div>
+</div>
+
+<!-- Vaeltrix Artifact Panel (Editor + Live Preview) -->
+<div id="artifact-panel" role="dialog" aria-modal="true" aria-label="Vaeltrix Artifact">
+  <div class="artifact-panel-header">
+    <button class="vx-close-x" onclick="closeArtifactPanel()" style="position:static;flex-shrink:0;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <div class="artifact-panel-title" id="artifact-panel-title">Artifact</div>
+    <div class="artifact-panel-tabs" id="artifact-panel-tabs">
+      <button class="artifact-tab-btn active" id="artifact-tab-code" onclick="switchArtifactTab('code')">Kode</button>
+      <button class="artifact-tab-btn" id="artifact-tab-preview" onclick="switchArtifactTab('preview')" style="display:none;">Preview</button>
+    </div>
+  </div>
+  <div id="artifact-version-bar" style="display:none;padding:6px 14px;border-bottom:1px solid var(--glass-border);">
+    <select id="artifact-version-select" onchange="loadArtifactVersion(this.value)" style="width:100%;background:transparent;color:inherit;border:1px solid var(--glass-border);border-radius:8px;padding:6px 8px;font-size:12px;"></select>
+  </div>
+  <div class="artifact-panel-body">
+    <textarea id="artifact-code-editor" spellcheck="false"></textarea>
+    <iframe id="artifact-preview-frame" style="display:none;" sandbox="allow-scripts allow-modals" title="Artifact Preview"></iframe>
+  </div>
+  <div class="artifact-panel-footer">
+    <button class="ref-small-btn" onclick="copyArtifactCode()">Salin</button>
+    <button class="ref-small-btn" onclick="downloadArtifactCode()">Unduh</button>
+    <button class="ref-small-btn" onclick="resetArtifactCode()">Reset</button>
+    <button class="panel-btn blue" style="width:auto;flex:1;margin:0;" onclick="saveArtifactCode()">Simpan Perubahan</button>
+  </div>
+</div>
+
+<!-- Vaeltrix Live (Voice Mode Dua Arah) -->
+<div id="live-voice-overlay" role="dialog" aria-modal="true" aria-label="Vaeltrix Live">
+  <button class="vx-close-x" onclick="closeLiveMode()" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.08);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <div class="live-status-label" id="live-status-label">Menyiapkan...</div>
+  <div class="live-orb-wrap">
+    <div class="live-orb-ring"></div>
+    <div class="live-orb state-idle" id="live-orb">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4"/></svg>
+    </div>
+  </div>
+  <div class="live-caption" id="live-caption"></div>
+  <div class="live-controls">
+    <button class="live-ctrl-btn" id="live-mute-btn" onclick="toggleLiveMute()" title="Bisukan Mic" aria-label="Bisukan Mic">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+    </button>
+    <button class="live-ctrl-btn live-stop-btn" onclick="closeLiveMode()" title="Selesai" aria-label="Selesai Vaeltrix Live">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- Onboarding (Pertama Kali Buka) — carousel 4 slide: Welcome, Obrolan, Gambar, Rangkuman -->
+<div id="onboard-backdrop" role="dialog" aria-modal="true" aria-label="Selamat Datang di VaeltrixAI">
+  <div class="onboard-dots">
+    <span class="onboard-dot active" data-dot="0"></span>
+    <span class="onboard-dot" data-dot="1"></span>
+    <span class="onboard-dot" data-dot="2"></span>
+    <span class="onboard-dot" data-dot="3"></span>
+  </div>
+  <button class="onboard-skip" id="onboard-skip-btn" onclick="closeOnboarding()">Lewati</button>
+
+  <div class="onboard-slides">
+
+    <!-- Slide 0 — Welcome -->
+    <div class="onboard-slide active" data-slide="0">
+      <div class="onboard-body">
+        <h1 class="onboard-title">Selamat Datang<br>Di VaeltrixAI</h1>
+        <p class="onboard-sub">Satu App, Beberapa Model AI — Buat Ngobrol, Bikin Gambar, Sampe Bantuin Kerjaan Coding Kamu.</p>
+        <div class="onboard-feature-grid">
+          <div class="onboard-card">
+            <div class="onboard-card-icon" style="background:linear-gradient(135deg,#B8B8B8,#5A5A5A);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="onboard-card-title">Obrolan Cerdas</div>
+            <div class="onboard-card-desc">6 Model AI Siap Bantu</div>
+          </div>
+          <div class="onboard-card">
+            <div class="onboard-card-icon" style="background:linear-gradient(135deg,#5A5A5A,#8C4A2F);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+            <div class="onboard-card-title">Pembuatan Gambar</div>
+            <div class="onboard-card-desc">Teks Jadi Visual</div>
+          </div>
+        </div>
+        <div class="onboard-card onboard-card-wide">
+          <div class="onboard-card-icon" style="background:linear-gradient(135deg,#FFB800,#FF8A00);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <div class="onboard-card-title">Kilat Cepat</div>
+          <div class="onboard-card-desc">Mode Lite Buat Jawaban Instan</div>
+        </div>
+      </div>
+      <button class="onboard-cta" onclick="onboardGoTo(1)"><b>Mulai</b></button>
+    </div>
+
+    <!-- Slide 1 — Obrolan AI Cerdas -->
+    <div class="onboard-slide" data-slide="1">
+      <div class="onboard-body">
+        <div class="onboard-icon-circle" style="background:linear-gradient(135deg,#808080,#5A5A5A);"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h1 class="onboard-title">Percakapan AI Cerdas</h1>
+        <p class="onboard-sub">Ngobrol Sama Model AI Yang Paham Konteks Obrolan Kamu — Dari Yang Santai Sampe Yang Serius.</p>
+        <div class="onboard-demo-box">
+          <div class="onboard-demo-bubble user">Bantu Aku Nulis Cerita Pendek Soal AI</div>
+          <div class="onboard-demo-bubble ai">Siap! Yuk Kita Mulai Dari Ide Ceritanya Dulu…</div>
+        </div>
+      </div>
+      <button class="onboard-cta" onclick="onboardGoTo(2)"><b>Lanjutkan</b></button>
+    </div>
+
+    <!-- Slide 2 — Pembuatan Gambar AI -->
+    <div class="onboard-slide" data-slide="2">
+      <div class="onboard-body">
+        <div class="onboard-icon-circle" style="background:linear-gradient(135deg,#8C4A2F,#5A5A5A);"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+        <h1 class="onboard-title">Pembuatan Gambar AI</h1>
+        <p class="onboard-sub">Ubah Deskripsi Teks Kamu Jadi Gambar — Tinggal Ketik, Vaeltrix Yang Gambarin.</p>
+        <div class="onboard-demo-box">
+          <div class="onboard-demo-label">Permintaanmu:</div>
+          <div class="onboard-demo-prompt">"Kucing Oren Duduk Baca Buku Pakai Kacamata"</div>
+          <div class="onboard-demo-imgrow">
+            <div class="onboard-demo-imgtile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Dihasilkan</span></div>
+            <div class="onboard-demo-imgtile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Dihasilkan</span></div>
+          </div>
+        </div>
+      </div>
+      <button class="onboard-cta" onclick="onboardGoTo(3)"><b>Lanjutkan</b></button>
+    </div>
+
+    <!-- Slide 3 — Rangkuman + CTA Final -->
+    <div class="onboard-slide" data-slide="3">
+      <div class="onboard-body">
+        <div class="onboard-demo-box onboard-code-demo">
+          <div class="onboard-code-demo-header"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Vaeltrix Code — Mode Premium</div>
+          <div class="onboard-code-demo-line">function <span class="tk-fn">cekPrima</span>(n) {</div>
+          <div class="onboard-code-demo-line">&nbsp;&nbsp;return n &gt; 1 &amp;&amp; …</div>
+          <div class="onboard-code-demo-line">}</div>
+        </div>
+        <h2 class="onboard-checklist-title">Semua Yang Kamu Butuhkan</h2>
+        <div class="onboard-checklist">
+          <div class="onboard-checklist-item">
+            <span class="onboard-checklist-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <div><div class="onboard-checklist-name">Obrolan AI Cerdas</div><div class="onboard-checklist-desc">Percakapan Yang Paham Konteks</div></div>
+            <span class="onboard-checklist-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 17"/></svg></span>
+          </div>
+          <div class="onboard-checklist-item">
+            <span class="onboard-checklist-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></span>
+            <div><div class="onboard-checklist-name">Pembuatan Gambar</div><div class="onboard-checklist-desc">Kreasi Visual Dari Teks</div></div>
+            <span class="onboard-checklist-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 17"/></svg></span>
+          </div>
+          <div class="onboard-checklist-item">
+            <span class="onboard-checklist-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+            <div><div class="onboard-checklist-name">Mode Premium</div><div class="onboard-checklist-desc">Code, Maxs &amp; Riset Mendalam</div></div>
+            <span class="onboard-checklist-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 17"/></svg></span>
+          </div>
+        </div>
+      </div>
+      <button class="onboard-cta" onclick="closeOnboarding()"><b>Mari Kita Mulai</b></button>
+    </div>
+
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<!-- Preview Modal -->
+<div id="preview-modal">
+  <div class="preview-topbar">
+    <div class="preview-title"><b>CODE PREVIEW</b></div>
+    <button class="preview-close" onclick="closePreview()">
+      <svg width="12" height="12" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      Tutup
+    </button>
+  </div>
+  <iframe id="preview-frame" sandbox="allow-scripts allow-modals allow-forms allow-popups"></iframe>
+</div>
+
+<!-- Modal Perbesar Kode -->
+<div id="code-expand-modal">
+  <div class="preview-topbar">
+    <div class="preview-title"><b id="code-expand-lang">CODE</b></div>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <button class="preview-close" onclick="copyExpandedCode()">
+        <svg width="12" height="12" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Salin
+      </button>
+      <button class="preview-close" onclick="closeCodeExpand()">
+        <svg width="12" height="12" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        Tutup
+      </button>
+    </div>
+  </div>
+  <pre id="code-expand-pre"><code id="code-expand-code"></code></pre>
+</div>
+
+<script src="js/01-config.js"></script>
+<script src="js/02-utils.js"></script>
+<script src="js/03-init.js"></script>
+<script src="js/04-settings.js"></script>
+<script src="js/05-sidebar.js"></script>
+<script src="js/06-chat-core.js"></script>
+<script src="js/07-providers.js"></script>
+<script src="js/08-markdown.js"></script>
+<script src="js/09-attachments.js"></script>
+<script src="js/10-memory-persona.js"></script>
+<script src="js/11-voice.js"></script>
+<script src="js/12-search.js"></script>
+<script src="js/13-data.js"></script>
+<script src="js/14-projects.js"></script>
+<script src="js/15-artifacts.js"></script>
+<script src="js/16-live-voice.js"></script>
+<script src="js/17-account.js"></script>
+<script src="js/18-cloud-sync.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.git
+.gitignore
+.env
+.env.example
+README.md
+CHANGELOG.md
+SECURITY.md
+**/__pycache__
+**/*.pyc
+backend/tests
+backend/requirements-dev.txt
+backend/pytest.ini
+supabase
+.venv
+venv
+node_modules
