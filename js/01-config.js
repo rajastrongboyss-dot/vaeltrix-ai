@@ -55,7 +55,7 @@ const FREE_LIMIT = 20;
 const PREMIUM_LIMIT = 60;
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 const GROQ_BASE = "https://api.groq.com/openai/v1/chat/completions";
-const VAELTRIX_BACKEND_BASE = "https://api-vaeltrix-ai.up.railway.app";
+const VAELTRIX_BACKEND_BASE = "https://vaeltrix-ai-production.up.railway.app";
 const POLLINATIONS_EDIT_BASE = "https://gen.pollinations.ai/v1/images/edits";
 // Sama kayak DEFAULT_KEY/GROQ_KEY di atas -- key Tavily VaeltrixLabs yang lama ke-expose ke
 // browser (dan bahkan gak pernah ada di config backend sama sekali, jadi search 100% jalan di
