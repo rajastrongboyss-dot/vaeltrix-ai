@@ -18,7 +18,6 @@ COPY index.html manifest.json sw.js ./
 COPY css ./css
 COPY js ./js
 COPY assets ./assets
-COPY fonts ./fonts
 
 # Backend.
 COPY backend/app backend/app
