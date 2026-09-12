@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /c/
+Disallow: /settings/
+Sitemap: https://vaeltrix-ai.vercel.app/sitemap.xml

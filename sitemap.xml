@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/settings</loc>
+  </url>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/artifacts</loc>
+  </url>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/search</loc>
+  </url>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/live</loc>
+  </url>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/settings/custom-api</loc>
+  </url>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/settings/security</loc>
+  </url>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/settings/theme</loc>
+  </url>
+
+  <url>
+    <loc>https://vaeltrix-ai.vercel.app/settings/language</loc>
+  </url>
+
+</urlset>
